@@ -23,11 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         //3. view 계층을 프로그래밍 방식으로 만들기
-        let viewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        
+        let viewController = MyUniTabBarController()
+
         //4. viewController로 window의 root view controller를 설정
-        window.rootViewController = navigationController
+        window.rootViewController = viewController
         
         //5. window를 설정하고 makeKeyAndVisible()
         self.window = window
