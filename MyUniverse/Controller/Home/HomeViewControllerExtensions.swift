@@ -25,7 +25,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "main_cell", for: indexPath) as? HomeTableViewCell, indexPath.row < getViewModel().numberOfRowsInSection() else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "main_cell", for: indexPath) as? HomeTableViewCell,
+                indexPath.row < getViewModel().numberOfRowsInSection() else {
+            return UITableViewCell()
+        }
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         cell.setUI(parentViewWidth: view.frame.width, collectionViewDelegate: self, collectionViewDataSource: self)
@@ -48,7 +51,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_cell", for: indexPath) as? HomeCollectionViewCell, indexPath.item < getViewModel().getCollectionNumberOfItemsInSection(section: getViewModel().numberOfRowsInSection()) else { return UICollectionViewCell() }
+        guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_cell", for: indexPath) as? HomeCollectionViewCell,
+              indexPath.item < getViewModel().getCollectionNumberOfItemsInSection(section: getViewModel().numberOfRowsInSection()) else {
+            return UICollectionViewCell()
+        }
         item.backgroundColor = UIColor(named: "subColor")
         item.setUI(titleText: getViewModel().getCollectionViewCellTitles(section: getViewModel().numberOfRowsInSection(), item: indexPath.item))
         return item

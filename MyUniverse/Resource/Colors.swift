@@ -7,12 +7,10 @@
 
 import Foundation
 
-///My Universe에서 사용할 색깔들을 관리
+/// My Universe에서 사용할 색깔들을 관리
 enum Colors {
     case mainColor
     case subColor
-    case purple_B080FF
-    case gray_EAEAEA
-    
-    
+    case purpleB080FF
+    case grayEAEAEA
 }
