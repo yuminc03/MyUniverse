@@ -15,6 +15,18 @@
 		8D29AB3929B45F2200AD5072 /* MyUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */; };
 		8D29AB3B29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */; };
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
+		8D871F0529C354E600FE4528 /* HomeViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */; };
+		8D871F0729C3555C00FE4528 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0629C3555C00FE4528 /* HomeViewModel.swift */; };
+		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
+		8D871F1229C35B8F00FE4528 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F0C29C35B8E00FE4528 /* NotoSansKR-Bold.otf */; };
+		8D871F1329C35B8F00FE4528 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F0D29C35B8E00FE4528 /* NotoSansKR-Medium.otf */; };
+		8D871F1429C35B8F00FE4528 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F0E29C35B8F00FE4528 /* NotoSansKR-Regular.otf */; };
+		8D871F1529C35B8F00FE4528 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F0F29C35B8F00FE4528 /* NotoSansKR-Light.otf */; };
+		8D871F1629C35B8F00FE4528 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F1029C35B8F00FE4528 /* NotoSansKR-Thin.otf */; };
+		8D871F1729C35B8F00FE4528 /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D871F1129C35B8F00FE4528 /* NotoSansKR-Black.otf */; };
+		8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F1929C35CDA00FE4528 /* Colors.swift */; };
+		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
+		8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
 		8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */; };
 		8DEFA09C29BE1A39004982CA /* MyUniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */; };
@@ -52,6 +64,18 @@
 		8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITests.swift; sourceTree = "<group>"; };
 		8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
+		8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerExtensions.swift; sourceTree = "<group>"; };
+		8D871F0629C3555C00FE4528 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8D871F0C29C35B8E00FE4528 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		8D871F0D29C35B8E00FE4528 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		8D871F0E29C35B8F00FE4528 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		8D871F0F29C35B8F00FE4528 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		8D871F1029C35B8F00FE4528 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		8D871F1129C35B8F00FE4528 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
+		8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarControllerExtensions.swift; sourceTree = "<group>"; };
 		8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniViewController.swift; sourceTree = "<group>"; };
 		8DEFA09D29BE1A65004982CA /* MyUniNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNavigationViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +133,7 @@
 			children = (
 				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
 				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
+				8D871F0B29C35B4900FE4528 /* Resource */,
 				8DEFA09629BE1899004982CA /* TabBar */,
 				8DEFA09729BE189F004982CA /* Navi */,
 				8DEFA09829BE18B4004982CA /* Controller */,
@@ -136,6 +161,65 @@
 			path = MyUniverseUITests;
 			sourceTree = "<group>";
 		};
+		8D871F0329C3534500FE4528 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D871F0629C3555C00FE4528 /* HomeViewModel.swift */,
+				8DEFA09F29BE1E56004982CA /* HomeViewController.swift */,
+				8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */,
+				8D871F0829C3594500FE4528 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D871F0829C3594500FE4528 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DEACCC629C72E740043DA10 /* TableView */,
+				8DEACCC729C72E810043DA10 /* CollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D871F0B29C35B4900FE4528 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8D871F1829C35CC400FE4528 /* Fonts */,
+				8D871F1929C35CDA00FE4528 /* Colors.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8D871F1829C35CC400FE4528 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8D871F1129C35B8F00FE4528 /* NotoSansKR-Black.otf */,
+				8D871F0C29C35B8E00FE4528 /* NotoSansKR-Bold.otf */,
+				8D871F0D29C35B8E00FE4528 /* NotoSansKR-Medium.otf */,
+				8D871F0E29C35B8F00FE4528 /* NotoSansKR-Regular.otf */,
+				8D871F0F29C35B8F00FE4528 /* NotoSansKR-Light.otf */,
+				8D871F1029C35B8F00FE4528 /* NotoSansKR-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8DEACCC629C72E740043DA10 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */,
+				8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		8DEACCC729C72E810043DA10 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		8DEFA09629BE1899004982CA /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */,
-				8DEFA09F29BE1E56004982CA /* HomeViewController.swift */,
+				8D871F0329C3534500FE4528 /* Home */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,8 +356,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D871F1529C35B8F00FE4528 /* NotoSansKR-Light.otf in Resources */,
+				8D871F1629C35B8F00FE4528 /* NotoSansKR-Thin.otf in Resources */,
+				8D871F1329C35B8F00FE4528 /* NotoSansKR-Medium.otf in Resources */,
 				8D29AB2429B45F2200AD5072 /* LaunchScreen.storyboard in Resources */,
+				8D871F1229C35B8F00FE4528 /* NotoSansKR-Bold.otf in Resources */,
 				8D29AB2129B45F2200AD5072 /* Assets.xcassets in Resources */,
+				8D871F1429C35B8F00FE4528 /* NotoSansKR-Regular.otf in Resources */,
+				8D871F1729C35B8F00FE4528 /* NotoSansKR-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +389,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
+				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
+				8D871F0729C3555C00FE4528 /* HomeViewModel.swift in Sources */,
+				8D871F0529C354E600FE4528 /* HomeViewControllerExtensions.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniViewController.swift in Sources */,
+				8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */,
+				8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */,
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
 				8DEFA09E29BE1A65004982CA /* MyUniNavigationViewController.swift in Sources */,
+				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeViewController.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
@@ -480,6 +576,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

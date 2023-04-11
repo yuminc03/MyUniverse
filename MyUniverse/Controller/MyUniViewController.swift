@@ -19,7 +19,7 @@ class MyUniViewController: UIViewController {
     }
     
     private func setupView() {
-        view.backgroundColor = UIColor(named: "MainColor")
+        view.backgroundColor = UIColor(named: "mainColor")
         self.navigationController?.isNavigationBarHidden = true
     }
 }
