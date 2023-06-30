@@ -7,10 +7,10 @@
 
 import UIKit
 
-class MyUniViewController: UIViewController {
+class MyUniVC: UIViewController {
     
-    var navi: MyUniNavigationViewController? {
-        return navigationController as? MyUniNavigationViewController
+    var navi: MyUniNaviVC? {
+        return navigationController as? MyUniNaviVC
     }
     
     override func viewDidLoad() {

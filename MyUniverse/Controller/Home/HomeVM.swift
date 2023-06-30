@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class HomeViewModel {
+final class HomeVM {
     
     private let homeTopTitleString: String = "Home"
     private let homeTableHeaderTitles: [String] = ["별자리", "태양계", "성간물질", "휴식공간"]

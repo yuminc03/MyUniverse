@@ -15,17 +15,16 @@
 		8D29AB3929B45F2200AD5072 /* MyUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */; };
 		8D29AB3B29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */; };
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
-		8D871F0529C354E600FE4528 /* HomeViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */; };
-		8D871F0729C3555C00FE4528 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0629C3555C00FE4528 /* HomeViewModel.swift */; };
+		8D871F0729C3555C00FE4528 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0629C3555C00FE4528 /* HomeVM.swift */; };
 		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
 		8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F1929C35CDA00FE4528 /* Colors.swift */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
 		8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
 		8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */; };
-		8DEFA09C29BE1A39004982CA /* MyUniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */; };
-		8DEFA09E29BE1A65004982CA /* MyUniNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNavigationViewController.swift */; };
-		8DEFA0A029BE1E56004982CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09F29BE1E56004982CA /* HomeViewController.swift */; };
+		8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniVC.swift */; };
+		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
+		8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09F29BE1E56004982CA /* HomeVC.swift */; };
 		C3FD10FCD67E1F9881CC8696 /* Pods_MyUniverseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9817476167BE28A2D83CFB3D /* Pods_MyUniverseTests.framework */; };
 		EA2497D222D44E2DB2861059 /* Pods_MyUniverse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F91CF0AA870442B1808EDC /* Pods_MyUniverse.framework */; };
 		FA37EB42E942BD4B85B4E48D /* Pods_MyUniverse_MyUniverseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACEB56C130E2C957197C5C /* Pods_MyUniverse_MyUniverseUITests.framework */; };
@@ -67,16 +66,15 @@
 		8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITests.swift; sourceTree = "<group>"; };
 		8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
-		8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerExtensions.swift; sourceTree = "<group>"; };
-		8D871F0629C3555C00FE4528 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8D871F0629C3555C00FE4528 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
 		8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarControllerExtensions.swift; sourceTree = "<group>"; };
-		8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniViewController.swift; sourceTree = "<group>"; };
-		8DEFA09D29BE1A65004982CA /* MyUniNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNavigationViewController.swift; sourceTree = "<group>"; };
-		8DEFA09F29BE1E56004982CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
+		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
+		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8F214D5535B9E4AB507ACF9B /* Pods-MyUniverse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniverse.debug.xcconfig"; path = "Target Support Files/Pods-MyUniverse/Pods-MyUniverse.debug.xcconfig"; sourceTree = "<group>"; };
 		9817476167BE28A2D83CFB3D /* Pods_MyUniverseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUniverseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0934ECD7D344CEF73619CA4 /* Pods-MyUniverse-MyUniverseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniverse-MyUniverseUITests.release.xcconfig"; path = "Target Support Files/Pods-MyUniverse-MyUniverseUITests/Pods-MyUniverse-MyUniverseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,9 +190,8 @@
 		8D871F0329C3534500FE4528 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8D871F0629C3555C00FE4528 /* HomeViewModel.swift */,
-				8DEFA09F29BE1E56004982CA /* HomeViewController.swift */,
-				8D871F0429C354E600FE4528 /* HomeViewControllerExtensions.swift */,
+				8D871F0629C3555C00FE4528 /* HomeVM.swift */,
+				8DEFA09F29BE1E56004982CA /* HomeVC.swift */,
 				8D871F0829C3594500FE4528 /* Views */,
 			);
 			path = Home;
@@ -246,7 +243,7 @@
 		8DEFA09729BE189F004982CA /* Navi */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFA09D29BE1A65004982CA /* MyUniNavigationViewController.swift */,
+				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
 			);
 			path = Navi;
 			sourceTree = "<group>";
@@ -254,7 +251,7 @@
 		8DEFA09829BE18B4004982CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFA09B29BE1A39004982CA /* MyUniViewController.swift */,
+				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
 				8D871F0329C3534500FE4528 /* Home */,
 			);
 			path = Controller;
@@ -433,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" > /dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		C0DF2827F39D75FFD79D9234 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -488,16 +485,15 @@
 			files = (
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
-				8D871F0729C3555C00FE4528 /* HomeViewModel.swift in Sources */,
-				8D871F0529C354E600FE4528 /* HomeViewControllerExtensions.swift in Sources */,
-				8DEFA09C29BE1A39004982CA /* MyUniViewController.swift in Sources */,
+				8D871F0729C3555C00FE4528 /* HomeVM.swift in Sources */,
+				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
 				8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */,
 				8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */,
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
-				8DEFA09E29BE1A65004982CA /* MyUniNavigationViewController.swift in Sources */,
+				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */,
-				8DEFA0A029BE1E56004982CA /* HomeViewController.swift in Sources */,
+				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -650,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -7,7 +7,3 @@
 
 import UIKit
 
-extension MyUniTabBarController: UITabBarControllerDelegate {
-    
-    
-}

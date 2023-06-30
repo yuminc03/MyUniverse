@@ -25,7 +25,7 @@ final class MyUniTabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = UIColor(named: "subColor") //tabBar item을 선택하지 않았을 때 색깔
         tabBar.layer.cornerRadius = 10
         
-        let mainVC = MyUniNavigationViewController(rootViewController: HomeViewController())
+        let mainVC = MyUniNaviVC(rootViewController: HomeVC())
         let mainItem = createCustomTabBarItem(itemTitle: "Home", itemImage: UIImage(systemName: "house"), selectedItemImage: UIImage(systemName: "house.fill"), tag: 0)
         mainVC.tabBarItem = mainItem
         self.viewControllers = [mainVC]
@@ -36,4 +36,8 @@ final class MyUniTabBarController: UITabBarController {
         tabBarItem.selectedImage = selectedItemImage
         return tabBarItem
     }
+}
+
+extension MyUniTabBarController: UITabBarControllerDelegate {
+    
 }
