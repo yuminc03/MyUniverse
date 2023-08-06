@@ -7,10 +7,10 @@
 
 import UIKit
 
-class MyUniViewController: UIViewController {
+class MyUniVC: UIViewController {
     
-    var navi: MyUniNavigationViewController? {
-        return navigationController as? MyUniNavigationViewController
+    var navi: MyUniNaviVC? {
+        return navigationController as? MyUniNaviVC
     }
     
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class MyUniViewController: UIViewController {
     }
     
     private func setupView() {
-        view.backgroundColor = UIColor(named: "MainColor")
+        view.backgroundColor = UIColor(named: "mainColor")
         self.navigationController?.isNavigationBarHidden = true
     }
 }
