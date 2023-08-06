@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-///HomeViewController의 TableView를 구성하는 Cell
+/// HomeViewController의 TableView를 구성하는 Cell
 final class HomeTableViewCell: UITableViewCell {
     
     private var collectionView: UICollectionView = {
@@ -33,7 +33,11 @@ final class HomeTableViewCell: UITableViewCell {
         super.init(coder: coder)
     }
     
-    func setUI(parentViewWidth: CGFloat, collectionViewDelegate: UICollectionViewDelegateFlowLayout?, collectionViewDataSource: UICollectionViewDataSource?) {
+    func setUI(
+        parentViewWidth: CGFloat,
+        collectionViewDelegate: UICollectionViewDelegateFlowLayout?,
+        collectionViewDataSource: UICollectionViewDataSource?
+    ) {
         self.parentViewWidth = parentViewWidth
         collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDataSource

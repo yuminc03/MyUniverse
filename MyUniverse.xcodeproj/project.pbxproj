@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D12DA922A7F46B700B2C190 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8D12DA912A7F46B700B2C190 /* .swiftlint.yml */; };
+		8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA942A7F481F00B2C190 /* TableView+.swift */; };
+		8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA952A7F481F00B2C190 /* Array+.swift */; };
+		8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA962A7F481F00B2C190 /* CollectionView+.swift */; };
 		8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB1729B45F2100AD5072 /* AppDelegate.swift */; };
 		8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */; };
 		8D29AB2129B45F2200AD5072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D29AB2029B45F2200AD5072 /* Assets.xcassets */; };
@@ -21,7 +25,6 @@
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
 		8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
-		8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */; };
 		8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniVC.swift */; };
 		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
 		8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09F29BE1E56004982CA /* HomeVC.swift */; };
@@ -54,6 +57,10 @@
 		1C6944F21D4915B498C49BA8 /* Pods-MyUniverseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniverseTests.release.xcconfig"; path = "Target Support Files/Pods-MyUniverseTests/Pods-MyUniverseTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF0F0D10E335A4FEEFEF2BB /* Pods-MyUniverseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniverseTests.debug.xcconfig"; path = "Target Support Files/Pods-MyUniverseTests/Pods-MyUniverseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88058BE33073142359645310 /* Pods-MyUniverse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUniverse.release.xcconfig"; path = "Target Support Files/Pods-MyUniverse/Pods-MyUniverse.release.xcconfig"; sourceTree = "<group>"; };
+		8D12DA912A7F46B700B2C190 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		8D12DA942A7F481F00B2C190 /* TableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
+		8D12DA952A7F481F00B2C190 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		8D12DA962A7F481F00B2C190 /* CollectionView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
 		8D29AB1429B45F2100AD5072 /* MyUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D29AB1729B45F2100AD5072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +78,6 @@
 		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
 		8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarControllerExtensions.swift; sourceTree = "<group>"; };
 		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
 		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
 		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -132,9 +138,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8D12DA932A7F47FF00B2C190 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D12DA952A7F481F00B2C190 /* Array+.swift */,
+				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
+				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
+				8D871F0B29C35B4900FE4528 /* Resource */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		8D29AB0B29B45F2100AD5072 = {
 			isa = PBXGroup;
 			children = (
+				8D12DA912A7F46B700B2C190 /* .swiftlint.yml */,
 				8D29AB1629B45F2100AD5072 /* MyUniverse */,
 				8D29AB2D29B45F2200AD5072 /* MyUniverseTests */,
 				8D29AB3729B45F2200AD5072 /* MyUniverseUITests */,
@@ -159,7 +177,7 @@
 			children = (
 				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
 				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
-				8D871F0B29C35B4900FE4528 /* Resource */,
+				8D12DA932A7F47FF00B2C190 /* Common */,
 				8DEFA09629BE1899004982CA /* TabBar */,
 				8DEFA09729BE189F004982CA /* Navi */,
 				8DEFA09829BE18B4004982CA /* Controller */,
@@ -235,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */,
-				8DEFA09929BE1922004982CA /* MyUniTabBarControllerExtensions.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -371,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D12DA922A7F46B700B2C190 /* .swiftlint.yml in Resources */,
 				8D29AB2429B45F2200AD5072 /* LaunchScreen.storyboard in Resources */,
 				8D29AB2129B45F2200AD5072 /* Assets.xcassets in Resources */,
 			);
@@ -483,17 +501,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
 				8D871F0729C3555C00FE4528 /* HomeVM.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
 				8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */,
+				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
 				8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */,
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
 				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
-				8DEFA09A29BE1922004982CA /* MyUniTabBarControllerExtensions.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
+				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

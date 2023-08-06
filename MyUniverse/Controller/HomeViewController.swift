@@ -12,6 +12,4 @@ final class HomeViewController: MyUniViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
 }

@@ -8,27 +8,28 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        //이 메서드를 사용하면 제공된 UIWindowScene `scene`에 선택적으로 window를 구성하고 첨부할 수 있다
-        //storyboard를 사용하는 경우 window property가 자동으로 초기화되어 scene에 첨부된다
-        //이 delegate는 연결되는 scene이나 session이 새로운 scene이라는 것을 의미하지 않는다(대신 application:configurationForConnectingSceneSession 참고)
+    
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
         
-        //1. scene 캡처
+        // 1. scene 캡처
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        //2. window scene을 가져오는 windowScene을 생성자를 사용해서 새로운 UIWindow를 생성
+        // 2. window scene을 가져오는 windowScene을 생성자를 사용해서 새로운 UIWindow를 생성
         let window = UIWindow(windowScene: windowScene)
         
-        //3. view 계층을 프로그래밍 방식으로 만들기
+        // 3. view 계층을 프로그래밍 방식으로 만들기
         let viewController = MyUniTabBarController()
 
-        //4. viewController로 window의 root view controller를 설정
+        // 4. viewController로 window의 root view controller를 설정
         window.rootViewController = viewController
         
-        //5. window를 설정하고 makeKeyAndVisible()
+        // 5. window를 설정하고 makeKeyAndVisible()
         self.window = window
         window.makeKeyAndVisible()
     }
@@ -62,4 +63,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 }
-

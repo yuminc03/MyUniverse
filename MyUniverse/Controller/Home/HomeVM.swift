@@ -9,9 +9,14 @@ import Foundation
 
 final class HomeVM {
     
-    private let homeTopTitleString: String = "Home"
-    private let homeTableHeaderTitles: [String] = ["별자리", "태양계", "성간물질", "휴식공간"]
-    private let collectionViewCellTitles: [[String]] = [["탄생 별자리", "계절별 별자리"], ["행성", "태양"], ["소행성", "성운", "은하"], ["Universe Quiz", ""]]
+    private let homeTopTitleString = "Home"
+    private let homeTableHeaderTitles = ["별자리", "태양계", "성간물질", "휴식공간"]
+    private let collectionViewCellTitles = [
+        ["탄생 별자리", "계절별 별자리"],
+        ["행성", "태양"],
+        ["소행성", "성운", "은하"],
+        ["Universe Quiz", ""]
+    ]
     
     func numberOfSections() -> Int {
         return homeTableHeaderTitles.count

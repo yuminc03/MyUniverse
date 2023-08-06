@@ -10,7 +10,7 @@ import SnapKit
 
 final class HomeVC: MyUniVC {
     
-    private let viewModel = HomeVM()
+    let vm = HomeVM()
     private let tableView = UITableView(frame: .zero, style: .grouped)
     
     override func viewDidLoad() {
@@ -19,25 +19,21 @@ final class HomeVC: MyUniVC {
         setConstraints()
     }
     
-    func getViewModel() -> HomeVM {
-        return viewModel
-    }
-    
     private func setupView() {
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(HomeTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: "main_header")
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "main_cell")
+        tableView.registerHeaderFooter(type: HomeTableViewHeaderView.self)
+        tableView.registerCell(type: HomeTableViewCell.self)
         view.addSubview(tableView)
     }
     
     private func setConstraints() {
-        tableView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+        tableView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
     }
 }
@@ -45,25 +41,22 @@ final class HomeVC: MyUniVC {
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        getViewModel().numberOfSections()
+        vm.numberOfSections()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        getViewModel().numberOfRowsInSection()
+        vm.numberOfRowsInSection()
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "main_header") as? HomeTableViewHeaderView else { return UIView() }
+        let header = tableView.dequeueHeaderFooter(type: HomeTableViewHeaderView.self)
         header.backgroundColor = .clear
-        header.setUI(titleText: getViewModel().getHomeTableHeaderTitles()[section])
+        header.setUI(titleText: vm.getHomeTableHeaderTitles()[section])
         return header
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "main_cell", for: indexPath) as? HomeTableViewCell,
-                indexPath.row < getViewModel().numberOfRowsInSection() else {
-            return UITableViewCell()
-        }
+        let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         cell.setUI(parentViewWidth: view.frame.width, collectionViewDelegate: self, collectionViewDataSource: self)
@@ -82,20 +75,29 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
 extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return getViewModel().getCollectionNumberOfItemsInSection(section: section)
+        return vm.getCollectionNumberOfItemsInSection(section: section)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_cell", for: indexPath) as? HomeCollectionViewCell,
-              indexPath.item < getViewModel().getCollectionNumberOfItemsInSection(section: getViewModel().numberOfRowsInSection()) else {
-            return UICollectionViewCell()
-        }
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
         item.backgroundColor = UIColor(named: "subColor")
-        item.setUI(titleText: getViewModel().getCollectionViewCellTitles(section: getViewModel().numberOfRowsInSection(), item: indexPath.item))
+        item.setUI(
+            titleText: vm.getCollectionViewCellTitles(
+                section: vm.numberOfRowsInSection(),
+                item: indexPath.item
+            )
+        )
         return item
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
         return CGSize(width: (view.frame.width - 50) / 2, height: (view.frame.width - 50) / 2)
     }
 }
