@@ -75,7 +75,8 @@ final class CustomItemView: UIView {
         }
         
         clearButton.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.width.height.equalTo(40)
+            $0.center.equalTo(iconImageView)
         }
     }
     
