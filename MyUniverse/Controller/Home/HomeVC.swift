@@ -50,16 +50,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueHeaderFooter(type: HomeTableViewHeaderView.self)
-        header.backgroundColor = .clear
-        header.setUI(titleText: vm.getHomeTableHeaderTitles()[section])
+        header.updateUI(titleText: vm.getHomeTableHeaderTitles()[section])
         return header
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
-        cell.backgroundColor = .clear
-        cell.selectionStyle = .none
-        cell.setUI(parentViewWidth: view.frame.width, collectionViewDelegate: self, collectionViewDataSource: self)
+        cell.updateUI(collectionViewDelegate: self, collectionViewDataSource: self)
         return cell
     }
     

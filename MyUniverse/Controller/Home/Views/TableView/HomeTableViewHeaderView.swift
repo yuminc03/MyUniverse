@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 import SnapKit
 
 final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
@@ -14,25 +15,26 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
+        setupUI()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("Do not use Storyboard.")
     }
     
-    func setUI(titleText: String) {
+    func updateUI(titleText: String) {
         titleLabel.text = titleText
-        setupView()
-        setConstraints()
     }
     
-    private func setupView() {
+    private func setupUI() {
+        backgroundColor = .clear
         titleLabel.textColor = .white
         titleLabel.font = .systemFont(ofSize: 20, weight: .medium)
         contentView.addSubview(titleLabel)
     }
     
-    private func setConstraints() {
+    private func setupConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)

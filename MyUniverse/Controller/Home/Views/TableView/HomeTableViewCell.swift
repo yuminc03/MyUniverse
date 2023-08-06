@@ -23,36 +23,35 @@ final class HomeTableViewCell: UITableViewCell {
         collectionView.registerItem(type: HomeCollectionViewCell.self)
         return collectionView
     }()
-    private var parentViewWidth: CGFloat = 0
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("Do not use Storyboard.")
     }
     
-    func setUI(
-        parentViewWidth: CGFloat,
+    func updateUI(
         collectionViewDelegate: UICollectionViewDelegateFlowLayout?,
         collectionViewDataSource: UICollectionViewDataSource?
     ) {
-        self.parentViewWidth = parentViewWidth
         collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDataSource
-        setupView()
-        setConstraints()
     }
     
-    private func setupView() {
+    private func setupUI() {
+        backgroundColor = .clear
+        selectionStyle = .none
         contentView.addSubview(collectionView)
     }
     
-    private func setConstraints() {
+    private func setupConstraints() {
         collectionView.snp.makeConstraints { make in
             make.leading.trailing.top.bottom.equalToSuperview()
-            make.height.equalTo((parentViewWidth - 50) / 2)
+            make.height.equalTo((UIScreen.main.bounds.width - 50) / 2)
         }
     }
 }
