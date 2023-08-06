@@ -6,47 +6,47 @@
 //
 
 import UIKit
+import Combine
+
+import CombineCocoa
+import SnapKit
 
 final class MyUniTabBarController: UITabBarController {
     
+    private let customTabBar = MyUniCustomTabBar()
+    private var cancelBag = Set<AnyCancellable>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
-        setupTabBarItem()
+        setupUI()
+        setupConstraints()
+        bind()
+        view.layoutIfNeeded()
     }
     
-    private func setupView() {
-        self.delegate = self
+    private func setupUI() {
+        tabBar.isHidden = true
+        navigationController?.isNavigationBarHidden = true
+        view.addSubview(customTabBar)
+        selectedIndex = 0
+        let controllers = CustomTabBarItem.allCases.map { $0.viewController }
+        setViewControllers(controllers, animated: true)
     }
     
-    private func setupTabBarItem() {
-        tabBar.backgroundColor = myUniColor(.subColor)?.withAlphaComponent(0.5)
-        tabBar.tintColor = myUniColor(.purple_B080FF)
-        tabBar.unselectedItemTintColor = myUniColor(.subColor)
-        tabBar.layer.cornerRadius = 10
-        
-        let mainVC = MyUniNaviVC(rootViewController: HomeVC())
-        let mainItem = createCustomTabBarItem(
-            itemTitle: "Home",
-            itemImage: UIImage(systemName: "house"),
-            selectedItemImage: UIImage(systemName: "house.fill"), tag: 0
-        )
-        mainVC.tabBarItem = mainItem
-        self.viewControllers = [mainVC]
+    private func setupConstraints() {
+        customTabBar.snp.makeConstraints {
+            $0.bottom.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(90)
+        }
     }
     
-    private func createCustomTabBarItem(
-        itemTitle: String?,
-        itemImage: UIImage?,
-        selectedItemImage: UIImage?,
-        tag: Int
-    ) -> UITabBarItem {
-        let tabBarItem = UITabBarItem(title: itemTitle, image: itemImage, tag: tag)
-        tabBarItem.selectedImage = selectedItemImage
-        return tabBarItem
+    private func bind() {
+        customTabBar.didTapItem
+            .sink(receiveValue: selectedTab)
+            .store(in: &cancelBag)
     }
-}
-
-extension MyUniTabBarController: UITabBarControllerDelegate {
     
+    private func selectedTab(index: Int) {
+        selectedIndex = index
+    }
 }

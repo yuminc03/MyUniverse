@@ -15,11 +15,11 @@ class MyUniVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupUI()
     }
     
-    private func setupView() {
-        view.backgroundColor = UIColor(named: "mainColor")
-        self.navigationController?.isNavigationBarHidden = true
+    private func setupUI() {
+        view.backgroundColor = myUniColor(.mainColor)
+        navigationController?.isNavigationBarHidden = true
     }
 }

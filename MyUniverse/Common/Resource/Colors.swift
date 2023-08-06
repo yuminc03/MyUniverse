@@ -14,6 +14,7 @@ enum Colors: String {
     case purple_B080FF
     case gray_EAEAEA
     case blue_218FF5
+    case black_000000
 }
 
 func myUniColor(_ color: Colors) -> UIColor? {
