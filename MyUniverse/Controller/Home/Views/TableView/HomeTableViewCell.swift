@@ -20,7 +20,7 @@ final class HomeTableViewCell: UITableViewCell {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.backgroundColor = .clear
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: "main_collection_cell")
+        collectionView.registerItem(type: HomeCollectionViewCell.self)
         return collectionView
     }()
     private var parentViewWidth: CGFloat = 0
