@@ -8,14 +8,8 @@
 import UIKit
 
 final class MyUniNaviVC: UINavigationController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if viewControllers.contains(viewController) { return }
-        super.pushViewController(viewController, animated: animated)
-    }
-    
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 }
