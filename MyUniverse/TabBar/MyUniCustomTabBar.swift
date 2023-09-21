@@ -39,7 +39,7 @@ final class MyUniCustomTabBar: UIStackView {
         distribution = .fillEqually
         layer.cornerRadius = 30
         layer.shadowColor = myUniColor(.black_000000)?.cgColor
-        layer.shadowOffset = .zero
+        layer.shadowPath = UIBezierPath(rect: bounds).cgPath
         layer.shadowOpacity = 0.4
         layer.shadowRadius = 7
         addArrangedSubviews([homeItem, menuItem])
