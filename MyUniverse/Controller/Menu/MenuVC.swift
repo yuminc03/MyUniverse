@@ -18,7 +18,7 @@ final class MenuVC: MyUniVC {
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
+
     }
     
     private func setupConstraints() {

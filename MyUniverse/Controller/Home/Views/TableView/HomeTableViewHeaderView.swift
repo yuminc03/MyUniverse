@@ -20,7 +20,7 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   private let titleLabel: UILabel = {
     let v = UILabel()
     v.textColor = .white
-    v.font = .systemFont(ofSize: 20, weight: .medium)
+    v.font = .systemFont(ofSize: 20, weight: .bold)
     return v
   }()
   
@@ -42,7 +42,8 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   
   private func setupConstraints() {
     stackView.snp.makeConstraints {
-      $0.edges.equalToSuperview().inset(20)
+      $0.leading.trailing.top.equalToSuperview().inset(20)
+      $0.bottom.equalToSuperview().inset(5)
     }
   }
   
