@@ -7,10 +7,25 @@
 
 import UIKit
 
+import ComposableArchitecture
 import SnapKit
 
-final class HomeVC: MyUniVC {
-  let vm = HomeVM()
+struct HomeCore: Reducer {
+  struct State: Equatable {
+    let universe = Universe.dummy
+    
+  }
+  
+  enum Action {
+    
+  }
+  
+  func reduce(into state: inout State, action: Action) -> Effect<Action> {
+    return .none
+  }
+}
+
+final class HomeVC: TCABaseVC<HomeCore> {
   private let tableView: UITableView = {
     let v = UITableView(frame: .zero, style: .grouped)
     v.backgroundColor = .clear
@@ -20,19 +35,28 @@ final class HomeVC: MyUniVC {
     return v
   }()
   
+  init() {
+    let store = Store(initialState: HomeCore.State()) {
+      HomeCore()
+    }
+    super.init(store: store)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
     setupConstraints()
   }
   
-  private func setupUI() {
+  override func setupUI() {
+    super.setupUI()
+    view.backgroundColor = myUniColor(.mainColor)
+    view.addSubview(tableView)
     let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100))
     footer.backgroundColor = .clear
     tableView.tableFooterView = footer
     tableView.delegate = self
     tableView.dataSource = self
-    view.addSubview(tableView)
   }
   
   private func setupConstraints() {
@@ -47,16 +71,16 @@ final class HomeVC: MyUniVC {
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    vm.numberOfSections()
+    return viewStore.universe.universe.count
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    vm.numberOfRowsInSection()
+    return 1
   }
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let header = tableView.dequeueHeaderFooter(type: HomeTableViewHeaderView.self)
-    header.updateUI(titleText: vm.getHomeTableHeaderTitles()[section])
+    header.updateUI(titleText: viewStore.universe.universe[section].name)
     return header
   }
   
@@ -78,7 +102,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
 extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return vm.getCollectionNumberOfItemsInSection(section: section)
+    return viewStore.universe.universe[section].stars.count
   }
   
   func collectionView(
@@ -88,10 +112,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource
     let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
     item.backgroundColor = myUniColor(.subColor)
     item.setUI(
-      titleText: vm.getCollectionViewCellTitles(
-        section: vm.numberOfRowsInSection(),
-        item: indexPath.item
-      )
+      titleText: viewStore.universe.universe[indexPath.section].stars[indexPath.row].name
     )
     return item
   }
