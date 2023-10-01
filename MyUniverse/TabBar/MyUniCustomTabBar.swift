@@ -24,7 +24,7 @@ final class MyUniCustomTabBar: UIStackView {
   private lazy var customItemViews = [homeItem, menuItem]
   
   private let visualEffectView: UIVisualEffectView = {
-    let blurEffect = UIBlurEffect(style: .light)
+    let blurEffect = UIBlurEffect(style: .regular)
     let v = UIVisualEffectView(effect: blurEffect)
     return v
   }()

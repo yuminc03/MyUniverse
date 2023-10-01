@@ -54,8 +54,14 @@ final class HomeVC: TCABaseVC<HomeCore> {
     super.setupUI()
     view.backgroundColor = myUniColor(.mainColor)
     view.addSubview(tableView)
-    let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100))
+    let header = HomeTableHeaderView(
+      frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
+    )
+    let footer = UIView(
+      frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100)
+    )
     footer.backgroundColor = .clear
+    tableView.tableHeaderView = header
     tableView.tableFooterView = footer
     tableView.delegate = self
     tableView.dataSource = self
