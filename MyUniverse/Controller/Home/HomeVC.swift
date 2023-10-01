@@ -12,7 +12,9 @@ import SnapKit
 
 struct HomeCore: Reducer {
   struct State: Equatable {
-    let universe = Universe.dummy
+    let constellation = Universe.constellationDummy
+    let solarSystem = Universe.solarSystemDummy
+    let interstellarMaterial = Universe.interstellarMaterialDummy
     
   }
   
@@ -71,7 +73,7 @@ final class HomeVC: TCABaseVC<HomeCore> {
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    return viewStore.universe.universe.count
+    return 3
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,13 +82,25 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let header = tableView.dequeueHeaderFooter(type: HomeTableViewHeaderView.self)
-    header.updateUI(titleText: viewStore.universe.universe[section].name)
+    switch section {
+    case 0:
+      header.updateUI(titleText: viewStore.constellation.name)
+      
+    case 1:
+      header.updateUI(titleText: viewStore.solarSystem.name)
+      
+    case 2:
+      header.updateUI(titleText: viewStore.interstellarMaterial.name)
+
+    default: break
+    }
+    
     return header
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
-    cell.updateUI(collectionViewDelegate: self, collectionViewDataSource: self)
+    cell.updateUI(tag: indexPath.section)
     return cell
   }
   
@@ -96,32 +110,5 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
     return 0
-  }
-}
-
-extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-  
-  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return viewStore.universe.universe[section].stars.count
-  }
-  
-  func collectionView(
-    _ collectionView: UICollectionView,
-    cellForItemAt indexPath: IndexPath
-  ) -> UICollectionViewCell {
-    let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
-    item.backgroundColor = myUniColor(.subColor)
-    item.setUI(
-      titleText: viewStore.universe.universe[indexPath.section].stars[indexPath.row].name
-    )
-    return item
-  }
-  
-  func collectionView(
-    _ collectionView: UICollectionView,
-    layout collectionViewLayout: UICollectionViewLayout,
-    sizeForItemAt indexPath: IndexPath
-  ) -> CGSize {
-    return CGSize(width: (view.frame.width - 50) / 2, height: (view.frame.width - 50) / 2)
   }
 }

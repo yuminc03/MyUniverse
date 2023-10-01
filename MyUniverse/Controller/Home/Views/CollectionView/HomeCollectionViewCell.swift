@@ -28,10 +28,6 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     fatalError("Do not use Storyboard.")
   }
   
-  func setUI(titleText: String) {
-    titleLabel.text = titleText
-  }
-  
   private func setupUI() {
     layer.cornerRadius = 10
     contentView.addSubview(titleLabel)
@@ -43,5 +39,9 @@ final class HomeCollectionViewCell: UICollectionViewCell {
       $0.trailing.lessThanOrEqualToSuperview().offset(-20)
       $0.top.equalToSuperview().offset(20)
     }
+  }
+  
+  func setUI(titleText: String) {
+    titleLabel.text = titleText
   }
 }

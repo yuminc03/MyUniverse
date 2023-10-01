@@ -6,11 +6,11 @@
 //
 
 import UIKit
+
 import SnapKit
 
 /// HomeViewController의 TableView를 구성하는 Cell
 final class HomeTableViewCell: UITableViewCell {
-  
   private var collectionView: UICollectionView = {
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.minimumLineSpacing = 10
@@ -24,6 +24,10 @@ final class HomeTableViewCell: UITableViewCell {
     return collectionView
   }()
   
+  private let constellation = Universe.constellationDummy
+  private let solarSystem = Universe.solarSystemDummy
+  private let interstellarMaterial = Universe.interstellarMaterialDummy
+  
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setupUI()
@@ -35,17 +39,17 @@ final class HomeTableViewCell: UITableViewCell {
   }
   
   func updateUI(
-    collectionViewDelegate: UICollectionViewDelegateFlowLayout?,
-    collectionViewDataSource: UICollectionViewDataSource?
+    tag: Int
   ) {
-    collectionView.delegate = collectionViewDelegate
-    collectionView.dataSource = collectionViewDataSource
+    collectionView.tag = tag
   }
   
   private func setupUI() {
     backgroundColor = .clear
     selectionStyle = .none
     contentView.addSubview(collectionView)
+    collectionView.delegate = self
+    collectionView.dataSource = self
   }
   
   private func setupConstraints() {
@@ -53,5 +57,63 @@ final class HomeTableViewCell: UITableViewCell {
       $0.edges.equalToSuperview()
       $0.height.equalTo((UIScreen.main.bounds.width - 50) / 2 + 10)
     }
+  }
+}
+
+extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    switch collectionView.tag {
+    case 0:
+      return constellation.stars.count
+      
+    case 1:
+      return solarSystem.stars.count
+      
+    case 2:
+      return interstellarMaterial.stars.count
+      
+    default:
+      return 0
+    }
+  }
+  
+  func collectionView(
+    _ collectionView: UICollectionView,
+    cellForItemAt indexPath: IndexPath
+  ) -> UICollectionViewCell {
+    let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
+    item.backgroundColor = myUniColor(.subColor)
+    switch collectionView.tag {
+    case 0:
+      item.setUI(
+        titleText: constellation.stars[indexPath.item].name
+      )
+      
+    case 1:
+      item.setUI(
+        titleText: solarSystem.stars[indexPath.item].name
+      )
+      
+    case 2:
+      item.setUI(
+        titleText: interstellarMaterial.stars[indexPath.item].name
+      )
+      
+    default: break
+    }
+    
+    return item
+  }
+  
+  func collectionView(
+    _ collectionView: UICollectionView,
+    layout collectionViewLayout: UICollectionViewLayout,
+    sizeForItemAt indexPath: IndexPath
+  ) -> CGSize {
+    return CGSize(
+      width: (UIScreen.main.bounds.width - 50) / 2,
+      height: (UIScreen.main.bounds.width - 50) / 2
+    )
   }
 }
