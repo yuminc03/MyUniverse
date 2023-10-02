@@ -18,6 +18,9 @@
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
 		8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */; };
+		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
+		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
+		8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */; };
 		8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */; };
 		8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A5172ABEBB5800F71B04 /* Universe.swift */; };
 		8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */; };
@@ -33,7 +36,7 @@
 		8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F1929C35CDA00FE4528 /* Colors.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
-		8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */; };
+		8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
 		8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniVC.swift */; };
 		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
@@ -68,6 +71,7 @@
 		8D12DAA52A7F847400B2C190 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
+		8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D25A5172ABEBB5800F71B04 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
 		8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCABaseVC.swift; sourceTree = "<group>"; };
 		8D29AB1429B45F2100AD5072 /* MyUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +90,7 @@
 		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
-		8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemCollectionCell.swift; sourceTree = "<group>"; };
 		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
 		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
 		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -98,8 +102,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */,
+				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
+				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +249,8 @@
 		8DEACCC729C72E810043DA10 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */,
+				8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */,
+				8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -299,6 +306,8 @@
 				8DEFA09429BE0C60004982CA /* SnapKit */,
 				8D12DA9F2A7F7C5E00B2C190 /* CombineCocoa */,
 				8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */,
+				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
+				8D238C822ACA493800D3DFDD /* PinLayout */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -376,6 +385,8 @@
 				8DEFA09329BE0C60004982CA /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 8D29AB1529B45F2100AD5072 /* Products */;
 			projectDirPath = "";
@@ -446,7 +457,7 @@
 				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
-				8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */,
+				8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */,
 				8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */,
 				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
 				8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */,
@@ -457,6 +468,7 @@
 				8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
+				8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */,
 				8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */,
 				8D12DA9D2A7F7AEE00B2C190 /* MyUniCustomTabBar.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
@@ -632,6 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GMHUACJXLZ;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Universe;
@@ -661,6 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GMHUACJXLZ;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Universe;
@@ -808,6 +822,22 @@
 				minimumVersion = 0.4.1;
 			};
 		};
+		8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -831,6 +861,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		8D238C7F2ACA490A00D3DFDD /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		8D238C822ACA493800D3DFDD /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 		8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;

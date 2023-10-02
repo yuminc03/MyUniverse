@@ -7,7 +7,8 @@
 
 import UIKit
 
-import SnapKit
+import FlexLayout
+import PinLayout
 
 /// HomeViewController의 TableView를 구성하는 Cell
 final class HomeTableViewCell: UITableViewCell {
@@ -20,7 +21,8 @@ final class HomeTableViewCell: UITableViewCell {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     collectionView.backgroundColor = .clear
     collectionView.showsHorizontalScrollIndicator = false
-    collectionView.registerItem(type: HomeCollectionViewCell.self)
+    collectionView.registerItem(type: SolarSystemCollectionCell.self)
+    collectionView.registerItem(type: ConstellationCollectionCell.self)
     return collectionView
   }()
   
@@ -34,14 +36,20 @@ final class HomeTableViewCell: UITableViewCell {
     setupConstraints()
   }
   
-  required init?(coder: NSCoder) {
-    fatalError("Do not use Storyboard.")
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    contentView.flex.layout(mode: .adjustHeight)
   }
   
-  func updateUI(
-    tag: Int
-  ) {
-    collectionView.tag = tag
+  override func sizeThatFits(_ size: CGSize) -> CGSize {
+    super.sizeThatFits(size)
+    contentView.flex.width(size.width)
+    contentView.flex.layout(mode: .adjustHeight)
+    return contentView.frame.size
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("Do not use Storyboard.")
   }
   
   private func setupUI() {
@@ -53,10 +61,24 @@ final class HomeTableViewCell: UITableViewCell {
   }
   
   private func setupConstraints() {
-    collectionView.snp.makeConstraints {
-      $0.edges.equalToSuperview()
-      $0.height.equalTo((UIScreen.main.bounds.width - 50) / 2 + 10)
+    contentView.flex.define {
+      switch collectionView.tag {
+      case 0:
+        $0.addItem(collectionView).height(UIScreen.main.bounds.width - 170)
+        
+      case 1:
+        $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
+        
+      case 2:
+        $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
+        
+      default: break
+      }
     }
+  }
+  
+  func updateUI(tag: Int) {
+    collectionView.tag = tag
   }
 }
 
@@ -82,28 +104,33 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
-    let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
-    item.backgroundColor = myUniColor(.subColor)
     switch collectionView.tag {
     case 0:
-      item.setUI(
-        titleText: constellation.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: ConstellationCollectionCell.self,
+        indexPath: indexPath
       )
+      item.setUI(titleText: constellation.stars[indexPath.item].name)
+      return item
       
     case 1:
-      item.setUI(
-        titleText: solarSystem.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: SolarSystemCollectionCell.self,
+        indexPath: indexPath
       )
+      item.setUI(titleText: solarSystem.stars[indexPath.item].name)
+      return item
       
     case 2:
-      item.setUI(
-        titleText: interstellarMaterial.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: SolarSystemCollectionCell.self,
+        indexPath: indexPath
       )
-      
-    default: break
+      item.setUI(titleText: interstellarMaterial.stars[indexPath.item].name)
+      return item
+
+    default: return UICollectionViewCell()
     }
-    
-    return item
   }
   
   func collectionView(
@@ -111,9 +138,20 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
     layout collectionViewLayout: UICollectionViewLayout,
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
-    return CGSize(
-      width: (UIScreen.main.bounds.width - 50) / 2,
-      height: (UIScreen.main.bounds.width - 50) / 2
-    )
+    switch collectionView.tag {
+    case 0:
+      return CGSize(
+        width: UIScreen.main.bounds.width - 40,
+        height: UIScreen.main.bounds.width - 180
+      )
+      
+    case 1, 2:
+      return CGSize(
+        width: (UIScreen.main.bounds.width - 50) / 2,
+        height: (UIScreen.main.bounds.width - 30) / 2
+      )
+      
+    default: return CGSize(width: 0, height: 0)
+    }
   }
 }

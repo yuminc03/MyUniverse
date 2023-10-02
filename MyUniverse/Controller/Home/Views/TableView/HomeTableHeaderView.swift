@@ -7,13 +7,13 @@
 
 import UIKit
 
-import SnapKit
+import FlexLayout
+import PinLayout
 
 final class HomeTableHeaderView: UIView {
-  private let containerStackView: UIStackView = {
-    let v = UIStackView()
-    v.axis = .horizontal
-    v.spacing = 0
+  private let containerView: UIView = {
+    let v = UIView()
+    v.backgroundColor = .clear
     return v
   }()
   
@@ -32,19 +32,24 @@ final class HomeTableHeaderView: UIView {
     setupConstraints()
   }
   
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    containerView.pin.all()
+    containerView.flex.layout(mode: .adjustHeight)
+  }
+  
   required init?(coder: NSCoder) {
     fatalError("Do not use Storyboard.")
   }
   
   private func setupUI() {
     backgroundColor = .clear
-    addSubview(containerStackView)
-    containerStackView.addArrangedSubview(titleLabel)
+    addSubview(containerView)
   }
   
   private func setupConstraints() {
-    containerStackView.snp.makeConstraints {
-      $0.top.leading.trailing.equalToSuperview().inset(20)
+    containerView.flex.direction(.column).padding(20, 20).define {
+      $0.addItem(titleLabel)
     }
   }
 }

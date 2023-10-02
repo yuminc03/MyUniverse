@@ -1,5 +1,5 @@
 //
-//  HomeTableHeaderView.swift
+//  SolarSystemCollectionCell.swift
 //  MyUniverse
 //
 //  Created by Yumin Chu on 2023/03/19.
@@ -10,16 +10,23 @@ import UIKit
 import FlexLayout
 import PinLayout
 
-final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
-  private let titleLabel: UILabel = {
-    let v = UILabel()
-    v.textColor = .white
-    v.font = .systemFont(ofSize: 20, weight: .bold)
+final class SolarSystemCollectionCell: UICollectionViewCell {
+  private let roundedRectangleView: UIView = {
+    let v = UIView()
+    v.layer.cornerRadius = 10
+    v.backgroundColor = myUniColor(.subColor)
     return v
   }()
   
-  override init(reuseIdentifier: String?) {
-    super.init(reuseIdentifier: reuseIdentifier)
+  private let titleLabel: UILabel = {
+    let v = UILabel()
+    v.textColor = myUniColor(.purple_B080FF)
+    v.font = .systemFont(ofSize: 16)
+    return v
+  }()
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     setupUI()
     setupConstraints()
   }
@@ -40,16 +47,18 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   }
   
   private func setupUI() {
+    layer.cornerRadius = 10
     contentView.backgroundColor = .clear
   }
   
   private func setupConstraints() {
-    contentView.flex.padding(20, 20, 5).define {
-      $0.addItem(titleLabel)
+    contentView.flex.direction(.column).define {
+      $0.addItem(roundedRectangleView).height((UIScreen.main.bounds.width - 50) / 2)
+      $0.addItem(titleLabel).marginTop(10)
     }
   }
   
-  func updateUI(titleText: String) {
+  func setUI(titleText: String) {
     titleLabel.text = titleText
   }
 }
