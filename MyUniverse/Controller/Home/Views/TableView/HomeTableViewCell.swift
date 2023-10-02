@@ -7,7 +7,8 @@
 
 import UIKit
 
-import SnapKit
+import FlexLayout
+import PinLayout
 
 /// HomeViewController의 TableView를 구성하는 Cell
 final class HomeTableViewCell: UITableViewCell {
@@ -34,14 +35,20 @@ final class HomeTableViewCell: UITableViewCell {
     setupConstraints()
   }
   
-  required init?(coder: NSCoder) {
-    fatalError("Do not use Storyboard.")
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    contentView.flex.layout(mode: .adjustHeight)
   }
   
-  func updateUI(
-    tag: Int
-  ) {
-    collectionView.tag = tag
+  override func sizeThatFits(_ size: CGSize) -> CGSize {
+    super.sizeThatFits(size)
+    contentView.flex.width(size.width)
+    contentView.flex.layout(mode: .adjustHeight)
+    return contentView.frame.size
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("Do not use Storyboard.")
   }
   
   private func setupUI() {
@@ -53,10 +60,13 @@ final class HomeTableViewCell: UITableViewCell {
   }
   
   private func setupConstraints() {
-    collectionView.snp.makeConstraints {
-      $0.edges.equalToSuperview()
-      $0.height.equalTo((UIScreen.main.bounds.width - 50) / 2 + 10)
+    contentView.flex.define {
+      $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
     }
+  }
+  
+  func updateUI(tag: Int) {
+    collectionView.tag = tag
   }
 }
 
