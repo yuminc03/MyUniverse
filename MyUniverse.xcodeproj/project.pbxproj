@@ -18,6 +18,8 @@
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
 		8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */; };
+		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
+		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
 		8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */; };
 		8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A5172ABEBB5800F71B04 /* Universe.swift */; };
 		8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */; };
@@ -98,8 +100,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */,
+				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
+				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,8 @@
 				8DEFA09429BE0C60004982CA /* SnapKit */,
 				8D12DA9F2A7F7C5E00B2C190 /* CombineCocoa */,
 				8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */,
+				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
+				8D238C822ACA493800D3DFDD /* PinLayout */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -376,6 +382,8 @@
 				8DEFA09329BE0C60004982CA /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 8D29AB1529B45F2100AD5072 /* Products */;
 			projectDirPath = "";
@@ -632,6 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GMHUACJXLZ;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Universe;
@@ -661,6 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GMHUACJXLZ;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Universe;
@@ -808,6 +818,22 @@
 				minimumVersion = 0.4.1;
 			};
 		};
+		8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -831,6 +857,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		8D238C7F2ACA490A00D3DFDD /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		8D238C822ACA493800D3DFDD /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 		8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
