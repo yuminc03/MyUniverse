@@ -7,16 +7,10 @@
 
 import UIKit
 
-import SnapKit
+import FlexLayout
+import PinLayout
 
 final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
-  
-  private let stackView: UIStackView = {
-    let v = UIStackView()
-    v.axis = .horizontal
-    return v
-  }()
-  
   private let titleLabel: UILabel = {
     let v = UILabel()
     v.textColor = .white
@@ -30,20 +24,28 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
     setupConstraints()
   }
   
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    contentView.flex.layout(mode: .adjustHeight)
+  }
+  
+  override func sizeThatFits(_ size: CGSize) -> CGSize {
+    contentView.flex.width(size.width)
+    contentView.flex.layout(mode: .adjustHeight)
+    return contentView.frame.size
+  }
+  
   required init?(coder: NSCoder) {
     fatalError("Do not use Storyboard.")
   }
   
   private func setupUI() {
     backgroundColor = .clear
-    contentView.addSubview(stackView)
-    stackView.addArrangedSubview(titleLabel)
   }
   
   private func setupConstraints() {
-    stackView.snp.makeConstraints {
-      $0.leading.trailing.top.equalToSuperview().inset(20)
-      $0.bottom.equalToSuperview().inset(5)
+    contentView.flex.padding(20, 20, 5).define {
+      $0.addItem(titleLabel)
     }
   }
   
