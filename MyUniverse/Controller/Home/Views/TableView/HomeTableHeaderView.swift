@@ -35,7 +35,7 @@ final class HomeTableHeaderView: UIView {
   override func layoutSubviews() {
     super.layoutSubviews()
     containerView.pin.all()
-    containerView.flex.layout()
+    containerView.flex.layout(mode: .adjustHeight)
   }
   
   required init?(coder: NSCoder) {

@@ -40,7 +40,7 @@ final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   }
   
   private func setupUI() {
-    backgroundColor = .clear
+    contentView.backgroundColor = .clear
   }
   
   private func setupConstraints() {

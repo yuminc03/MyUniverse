@@ -8,7 +8,8 @@
 import UIKit
 
 import ComposableArchitecture
-import SnapKit
+import FlexLayout
+import PinLayout
 
 struct HomeCore: Reducer {
   struct State: Equatable {
@@ -28,6 +29,12 @@ struct HomeCore: Reducer {
 }
 
 final class HomeVC: TCABaseVC<HomeCore> {
+  private let containerView: UIView = {
+    let v = UIView()
+    v.backgroundColor = .clear
+    return v
+  }()
+  
   private let tableView: UITableView = {
     let v = UITableView(frame: .zero, style: .grouped)
     v.backgroundColor = .clear
@@ -47,13 +54,18 @@ final class HomeVC: TCABaseVC<HomeCore> {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
-    setupConstraints()
   }
   
-  override func setupUI() {
-    super.setupUI()
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    containerView.pin.all().margin(view.pin.safeArea)
+    tableView.pin.all()
+  }
+  
+  private func setupUI() {
     view.backgroundColor = myUniColor(.mainColor)
-    view.addSubview(tableView)
+    view.addSubview(containerView)
+    containerView.addSubview(tableView)
     let header = HomeTableHeaderView(
       frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
     )
@@ -65,14 +77,6 @@ final class HomeVC: TCABaseVC<HomeCore> {
     tableView.tableFooterView = footer
     tableView.delegate = self
     tableView.dataSource = self
-  }
-  
-  private func setupConstraints() {
-    tableView.snp.makeConstraints {
-      $0.leading.trailing.equalToSuperview()
-      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-      $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
-    }
   }
 }
 
