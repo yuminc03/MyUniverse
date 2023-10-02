@@ -22,6 +22,7 @@ final class HomeTableViewCell: UITableViewCell {
     collectionView.backgroundColor = .clear
     collectionView.showsHorizontalScrollIndicator = false
     collectionView.registerItem(type: HomeCollectionViewCell.self)
+    collectionView.registerItem(type: ConstellationCollectionCell.self)
     return collectionView
   }()
   
@@ -61,7 +62,18 @@ final class HomeTableViewCell: UITableViewCell {
   
   private func setupConstraints() {
     contentView.flex.define {
-      $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
+      switch collectionView.tag {
+      case 0:
+        $0.addItem(collectionView).height(UIScreen.main.bounds.width - 170)
+        
+      case 1:
+        $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
+        
+      case 2:
+        $0.addItem(collectionView).height((UIScreen.main.bounds.width - 50) / 2 + 10)
+        
+      default: break
+      }
     }
   }
   
@@ -92,28 +104,33 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
-    let item = collectionView.dequeueItem(type: HomeCollectionViewCell.self, indexPath: indexPath)
-    item.backgroundColor = myUniColor(.subColor)
     switch collectionView.tag {
     case 0:
-      item.setUI(
-        titleText: constellation.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: ConstellationCollectionCell.self,
+        indexPath: indexPath
       )
+      item.setUI(titleText: constellation.stars[indexPath.item].name)
+      return item
       
     case 1:
-      item.setUI(
-        titleText: solarSystem.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: HomeCollectionViewCell.self,
+        indexPath: indexPath
       )
+      item.setUI(titleText: solarSystem.stars[indexPath.item].name)
+      return item
       
     case 2:
-      item.setUI(
-        titleText: interstellarMaterial.stars[indexPath.item].name
+      let item = collectionView.dequeueItem(
+        type: HomeCollectionViewCell.self,
+        indexPath: indexPath
       )
-      
-    default: break
+      item.setUI(titleText: interstellarMaterial.stars[indexPath.item].name)
+      return item
+
+    default: return UICollectionViewCell()
     }
-    
-    return item
   }
   
   func collectionView(
@@ -121,9 +138,20 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
     layout collectionViewLayout: UICollectionViewLayout,
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
-    return CGSize(
-      width: (UIScreen.main.bounds.width - 50) / 2,
-      height: (UIScreen.main.bounds.width - 50) / 2
-    )
+    switch collectionView.tag {
+    case 0:
+      return CGSize(
+        width: UIScreen.main.bounds.width - 40,
+        height: UIScreen.main.bounds.width - 180
+      )
+      
+    case 1, 2:
+      return CGSize(
+        width: (UIScreen.main.bounds.width - 50) / 2,
+        height: (UIScreen.main.bounds.width - 50) / 2
+      )
+      
+    default: return CGSize(width: 0, height: 0)
+    }
   }
 }

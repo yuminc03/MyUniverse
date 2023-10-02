@@ -1,8 +1,8 @@
 //
-//  HomeCollectionViewCell.swift
+//  ConstellationCollectionCell.swift
 //  MyUniverse
 //
-//  Created by Yumin Chu on 2023/03/19.
+//  Created by Yumin Chu on 2023/10/02.
 //
 
 import UIKit
@@ -10,7 +10,14 @@ import UIKit
 import FlexLayout
 import PinLayout
 
-final class HomeCollectionViewCell: UICollectionViewCell {
+final class ConstellationCollectionCell: UICollectionViewCell {
+  private let roundedRectangleView: UIView = {
+    let v = UIView()
+    v.layer.cornerRadius = 10
+    v.backgroundColor = myUniColor(.subColor)
+    return v
+  }()
+  
   private let titleLabel: UILabel = {
     let v = UILabel()
     v.textColor = myUniColor(.purple_B080FF)
@@ -41,13 +48,13 @@ final class HomeCollectionViewCell: UICollectionViewCell {
   
   private func setupUI() {
     layer.cornerRadius = 10
-    backgroundColor = myUniColor(.subColor)
-    contentView.addSubview(titleLabel)
+    contentView.backgroundColor = .clear
   }
   
   private func setupConstraints() {
-    contentView.flex.padding(20, 20).define {
-      $0.addItem(titleLabel)
+    contentView.flex.direction(.column).define {
+      $0.addItem(roundedRectangleView).height((UIScreen.main.bounds.width - 40) / 2)
+      $0.addItem(titleLabel).marginTop(10)
     }
   }
   
