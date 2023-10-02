@@ -129,11 +129,9 @@
 		8D12DA932A7F47FF00B2C190 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8D12DA952A7F481F00B2C190 /* Array+.swift */,
-				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
-				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
-				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
-				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
+				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
+				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
+				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
 				8D871F0B29C35B4900FE4528 /* Resource */,
 			);
 			path = Common;
@@ -145,6 +143,25 @@
 				8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		8D238C862ACAB5A300D3DFDD /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constellation;
+			sourceTree = "<group>";
+		};
+		8D238C892ACAB61000D3DFDD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D12DA952A7F481F00B2C190 /* Array+.swift */,
+				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
+				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
+				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
+				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8D25A5162ABEB38400F71B04 /* Model */ = {
@@ -181,10 +198,10 @@
 			children = (
 				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
 				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
+				8D238C892ACAB61000D3DFDD /* Extension */,
 				8D25A5162ABEB38400F71B04 /* Model */,
 				8D12DA932A7F47FF00B2C190 /* Common */,
 				8DEFA09629BE1899004982CA /* TabBar */,
-				8DEFA09729BE189F004982CA /* Navi */,
 				8DEFA09829BE18B4004982CA /* Controller */,
 				8D29AB2029B45F2200AD5072 /* Assets.xcassets */,
 				8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */,
@@ -266,20 +283,11 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		8DEFA09729BE189F004982CA /* Navi */ = {
-			isa = PBXGroup;
-			children = (
-				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
-			);
-			path = Navi;
-			sourceTree = "<group>";
-		};
 		8DEFA09829BE18B4004982CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
-				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
 				8D871F0329C3534500FE4528 /* Home */,
+				8D238C862ACAB5A300D3DFDD /* Constellation */,
 				8D12DAA72A7F88D400B2C190 /* Menu */,
 			);
 			path = Controller;
