@@ -21,7 +21,7 @@ final class HomeTableViewCell: UITableViewCell {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     collectionView.backgroundColor = .clear
     collectionView.showsHorizontalScrollIndicator = false
-    collectionView.registerItem(type: HomeCollectionViewCell.self)
+    collectionView.registerItem(type: SolarSystemCollectionCell.self)
     collectionView.registerItem(type: ConstellationCollectionCell.self)
     return collectionView
   }()
@@ -115,7 +115,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
       
     case 1:
       let item = collectionView.dequeueItem(
-        type: HomeCollectionViewCell.self,
+        type: SolarSystemCollectionCell.self,
         indexPath: indexPath
       )
       item.setUI(titleText: solarSystem.stars[indexPath.item].name)
@@ -123,7 +123,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
       
     case 2:
       let item = collectionView.dequeueItem(
-        type: HomeCollectionViewCell.self,
+        type: SolarSystemCollectionCell.self,
         indexPath: indexPath
       )
       item.setUI(titleText: interstellarMaterial.stars[indexPath.item].name)
@@ -148,7 +148,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
     case 1, 2:
       return CGSize(
         width: (UIScreen.main.bounds.width - 50) / 2,
-        height: (UIScreen.main.bounds.width - 50) / 2
+        height: (UIScreen.main.bounds.width - 30) / 2
       )
       
     default: return CGSize(width: 0, height: 0)

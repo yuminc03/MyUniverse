@@ -36,7 +36,7 @@
 		8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F1929C35CDA00FE4528 /* Colors.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
-		8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */; };
+		8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
 		8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniVC.swift */; };
 		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
@@ -90,7 +90,7 @@
 		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
-		8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemCollectionCell.swift; sourceTree = "<group>"; };
 		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
 		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
 		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		8DEACCC729C72E810043DA10 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				8DEACCC829C72E9D0043DA10 /* HomeCollectionViewCell.swift */,
+				8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */,
 				8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */,
 			);
 			path = CollectionView;
@@ -457,7 +457,7 @@
 				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
-				8DEACCC929C72E9D0043DA10 /* HomeCollectionViewCell.swift in Sources */,
+				8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */,
 				8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */,
 				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
 				8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */,
