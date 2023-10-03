@@ -13,7 +13,7 @@ import SnapKit
 
 final class MyUniTabBarController: UITabBarController {
   
-  private let customTabBar = MyUniCustomTabBar()
+  let customTabBar = MyUniCustomTabBar()
   private var cancelBag = Set<AnyCancellable>()
   
   override func viewDidLoad() {

@@ -8,18 +8,25 @@
 import UIKit
 
 class MyUniVC: UIViewController {
-    
-    var navi: MyUniNaviVC? {
-        return navigationController as? MyUniNaviVC
+  
+  var navi: MyUniNaviVC {
+    guard let navi = navigationController as? MyUniNaviVC else {
+      fatalError("Do not Access NavigationController")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-    }
-    
-    private func setupUI() {
-        view.backgroundColor = myUniColor(.mainColor)
-        navigationController?.isNavigationBarHidden = true
-    }
+    return navi
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupUI()
+  }
+  
+  private func setupUI() {
+    view.backgroundColor = myUniColor(.mainColor)
+  }
+  
+  func setNavigationBarTitle(_ text: String) {
+    title = text
+  }
 }
