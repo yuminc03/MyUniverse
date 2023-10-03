@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 import ComposableArchitecture
 import FlexLayout
@@ -111,6 +112,19 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
     cell.updateUI(tag: indexPath.section)
+    cell.didSelectItem { [weak self] tag in
+      switch tag {
+      case 0:
+        let vc = UIHostingController(rootView: BirthConstellationView())
+        self?.navi.pushViewController(vc, animated: true)
+        
+      case 1: break
+        
+      case 2: break
+        
+      default: break
+      }
+    }
     return cell
   }
   
