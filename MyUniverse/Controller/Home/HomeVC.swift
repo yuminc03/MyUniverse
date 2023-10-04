@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 import ComposableArchitecture
 import FlexLayout
@@ -58,22 +59,20 @@ final class HomeVC: TCABaseVC<HomeCore> {
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    containerView.pin.all().margin(view.pin.safeArea)
+    containerView.pin.all()
     tableView.pin.all()
   }
   
   private func setupUI() {
+    setNavigationBarTitle("내 맘의 별들⭐️")
+    navi.navigationBar.prefersLargeTitles = true
     view.backgroundColor = myUniColor(.mainColor)
     view.addSubview(containerView)
     containerView.addSubview(tableView)
-    let header = HomeTableHeaderView(
-      frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
-    )
     let footer = UIView(
       frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100)
     )
     footer.backgroundColor = .clear
-    tableView.tableHeaderView = header
     tableView.tableFooterView = footer
     tableView.delegate = self
     tableView.dataSource = self
@@ -111,6 +110,19 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
     cell.updateUI(tag: indexPath.section)
+    cell.didSelectItem { [weak self] tag in
+      switch tag {
+      case 0:
+        let vc = BirthConstellationVC()
+        self?.navi.pushViewController(vc, animated: true)
+        
+      case 1: break
+        
+      case 2: break
+        
+      default: break
+      }
+    }
     return cell
   }
   

@@ -21,6 +21,9 @@
 		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
 		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
 		8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */; };
+		8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */; };
+		8D238D662ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */; };
+		8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */; };
 		8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */; };
 		8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A5172ABEBB5800F71B04 /* Universe.swift */; };
 		8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */; };
@@ -72,6 +75,9 @@
 		8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationCollectionCell.swift; sourceTree = "<group>"; };
+		8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellation.swift; sourceTree = "<group>"; };
+		8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationCollectionCell.swift; sourceTree = "<group>"; };
+		8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationVC.swift; sourceTree = "<group>"; };
 		8D25A5172ABEBB5800F71B04 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
 		8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCABaseVC.swift; sourceTree = "<group>"; };
 		8D29AB1429B45F2100AD5072 /* MyUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,11 +135,9 @@
 		8D12DA932A7F47FF00B2C190 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8D12DA952A7F481F00B2C190 /* Array+.swift */,
-				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
-				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
-				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
-				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
+				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
+				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
+				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
 				8D871F0B29C35B4900FE4528 /* Resource */,
 			);
 			path = Common;
@@ -147,10 +151,48 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		8D238C862ACAB5A300D3DFDD /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+				8D238C8A2ACAB84C00D3DFDD /* Birth */,
+				8D238C8B2ACAB85400D3DFDD /* Season */,
+			);
+			path = Constellation;
+			sourceTree = "<group>";
+		};
+		8D238C892ACAB61000D3DFDD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D12DA952A7F481F00B2C190 /* Array+.swift */,
+				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
+				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
+				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
+				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8D238C8A2ACAB84C00D3DFDD /* Birth */ = {
+			isa = PBXGroup;
+			children = (
+				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
+				8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */,
+			);
+			path = Birth;
+			sourceTree = "<group>";
+		};
+		8D238C8B2ACAB85400D3DFDD /* Season */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Season;
+			sourceTree = "<group>";
+		};
 		8D25A5162ABEB38400F71B04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
+				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,10 +223,10 @@
 			children = (
 				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
 				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
+				8D238C892ACAB61000D3DFDD /* Extension */,
 				8D25A5162ABEB38400F71B04 /* Model */,
 				8D12DA932A7F47FF00B2C190 /* Common */,
 				8DEFA09629BE1899004982CA /* TabBar */,
-				8DEFA09729BE189F004982CA /* Navi */,
 				8DEFA09829BE18B4004982CA /* Controller */,
 				8D29AB2029B45F2200AD5072 /* Assets.xcassets */,
 				8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */,
@@ -266,20 +308,11 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		8DEFA09729BE189F004982CA /* Navi */ = {
-			isa = PBXGroup;
-			children = (
-				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
-			);
-			path = Navi;
-			sourceTree = "<group>";
-		};
 		8DEFA09829BE18B4004982CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
-				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
 				8D871F0329C3534500FE4528 /* Home */,
+				8D238C862ACAB5A300D3DFDD /* Constellation */,
 				8D12DAA72A7F88D400B2C190 /* Menu */,
 			);
 			path = Controller;
@@ -454,6 +487,7 @@
 			files = (
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
+				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
 				8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
@@ -468,12 +502,14 @@
 				8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
+				8D238D662ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift in Sources */,
 				8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */,
 				8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */,
 				8D12DA9D2A7F7AEE00B2C190 /* MyUniCustomTabBar.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
+				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
