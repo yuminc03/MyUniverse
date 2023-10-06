@@ -37,6 +37,8 @@
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
 		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
 		8D871F1A29C35CDA00FE4528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F1929C35CDA00FE4528 /* Colors.swift */; };
+		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
+		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
 		8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */; };
@@ -94,6 +96,8 @@
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
 		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8D871F1929C35CDA00FE4528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
+		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
 		8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemCollectionCell.swift; sourceTree = "<group>"; };
@@ -176,7 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
+				8DC28BE42AD04A6800854348 /* BirthConstellations.swift */,
 				8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */,
+				8DC28BE12AD0488700854348 /* Detail */,
 			);
 			path = Birth;
 			sourceTree = "<group>";
@@ -276,6 +282,14 @@
 				8D871F1929C35CDA00FE4528 /* Colors.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		8DC28BE12AD0488700854348 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8DEACCC629C72E740043DA10 /* TableView */ = {
@@ -501,6 +515,7 @@
 				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
 				8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
+				8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
 				8D238D662ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift in Sources */,
 				8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */,
@@ -511,6 +526,7 @@
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
 				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
+				8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
