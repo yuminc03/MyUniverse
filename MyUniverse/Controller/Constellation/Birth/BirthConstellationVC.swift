@@ -7,11 +7,25 @@
 
 import UIKit
 
+import ComposableArchitecture
 import FlexLayout
 import PinLayout
 
 /// 탄생 별자리
-final class BirthConstellationVC: MyUniVC {
+struct BirthConstellationCore: Reducer {
+  struct State: Equatable {
+    let constellations = BirthConstellations.allCases
+  }
+  
+  enum Action {
+    
+  }
+  
+  func reduce(into state: inout State, action: Action) -> Effect<Action> {
+    return .none
+  }
+}
+final class BirthConstellationVC: TCABaseVC<BirthConstellationCore> {
   private let containerView: UIView = {
     let v = UIView()
     v.backgroundColor = .clear
@@ -29,6 +43,13 @@ final class BirthConstellationVC: MyUniVC {
     v.registerItem(type: BirthConstellationCollectionCell.self)
     return v
   }()
+  
+  init() {
+    let store = Store(initialState: BirthConstellationCore.State()) {
+      BirthConstellationCore()
+    }
+    super.init(store: store)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -71,6 +92,11 @@ extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollection
     let item = collectionView.dequeueItem(type: BirthConstellationCollectionCell.self, indexPath: indexPath)
     item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
     return item
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let vc = BirthConstellationDetailVC(constellation: viewStore.constellations[indexPath.row])
+    navi.pushViewController(vc, animated: true)
   }
   
   func collectionView(
