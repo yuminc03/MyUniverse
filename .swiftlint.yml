@@ -12,3 +12,5 @@ disabled_rules:
 
 excluded:
   - Pods
+
+line_length: 250

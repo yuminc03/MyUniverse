@@ -179,8 +179,8 @@
 		8D238C8A2ACAB84C00D3DFDD /* Birth */ = {
 			isa = PBXGroup;
 			children = (
-				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
 				8DC28BE42AD04A6800854348 /* BirthConstellations.swift */,
+				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
 				8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */,
 				8DC28BE12AD0488700854348 /* Detail */,
 			);
