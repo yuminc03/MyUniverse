@@ -17,6 +17,7 @@
 		8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA32A7F81FC00B2C190 /* UIView+.swift */; };
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
+		8D2110F92AF64556006F517E /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8D2110F82AF64556006F517E /* DesignSystem */; };
 		8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */; };
 		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
 		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
@@ -75,6 +76,7 @@
 		8D12DAA32A7F81FC00B2C190 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8D12DAA52A7F847400B2C190 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		8D2110F62AF64520006F517E /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../../../Desktop/DesignSystem; sourceTree = "<group>"; };
 		8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellation.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */,
 				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
+				8D2110F92AF64556006F517E /* DesignSystem in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
 				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
@@ -153,6 +156,13 @@
 				8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		8D2110F72AF64556006F517E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8D238C862ACAB5A300D3DFDD /* Constellation */ = {
@@ -206,11 +216,13 @@
 		8D29AB0B29B45F2100AD5072 = {
 			isa = PBXGroup;
 			children = (
+				8D2110F62AF64520006F517E /* DesignSystem */,
 				8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */,
 				8D29AB1629B45F2100AD5072 /* MyUniverse */,
 				8D29AB2D29B45F2200AD5072 /* MyUniverseTests */,
 				8D29AB3729B45F2200AD5072 /* MyUniverseUITests */,
 				8D29AB1529B45F2100AD5072 /* Products */,
+				8D2110F72AF64556006F517E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -355,6 +367,7 @@
 				8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */,
 				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
 				8D238C822ACA493800D3DFDD /* PinLayout */,
+				8D2110F82AF64556006F517E /* DesignSystem */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -699,7 +712,7 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Universe;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Universe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -729,7 +742,7 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyUniverse/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Universe;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Universe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -913,6 +926,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		8D2110F82AF64556006F517E /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
 		};
 		8D238C7F2ACA490A00D3DFDD /* FlexLayout */ = {
 			isa = XCSwiftPackageProductDependency;
