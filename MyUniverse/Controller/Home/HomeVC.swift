@@ -11,6 +11,7 @@ import SwiftUI
 import ComposableArchitecture
 import FlexLayout
 import PinLayout
+import DesignSystem
 
 struct HomeCore: Reducer {
   struct State: Equatable {
@@ -66,7 +67,7 @@ final class HomeVC: TCABaseVC<HomeCore> {
   private func setupUI() {
     setNavigationBarTitle("내 맘의 별들⭐️")
     navi.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = myUniColor(.mainColor)
+    view.backgroundColor = DesignSystem.myUniColor(.BGColor)
     view.addSubview(containerView)
     containerView.addSubview(tableView)
     let footer = UIView(
