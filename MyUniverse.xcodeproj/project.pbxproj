@@ -18,7 +18,6 @@
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
 		8D2110F92AF64556006F517E /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8D2110F82AF64556006F517E /* DesignSystem */; };
-		8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */; };
 		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
 		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
 		8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */; };
@@ -77,7 +76,6 @@
 		8D12DAA52A7F847400B2C190 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		8D2110F62AF64520006F517E /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../../../Desktop/DesignSystem; sourceTree = "<group>"; };
-		8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellation.swift; sourceTree = "<group>"; };
 		8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationCollectionCell.swift; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 		8DEACCC629C72E740043DA10 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				8D238C7C2AC9A8F500D3DFDD /* HomeTableHeaderView.swift */,
 				8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */,
 				8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */,
 			);
@@ -526,7 +523,6 @@
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
 				8D12DAA22A7F7EB000B2C190 /* CustomItemView.swift in Sources */,
 				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
-				8D238C7D2AC9A8F500D3DFDD /* HomeTableHeaderView.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
