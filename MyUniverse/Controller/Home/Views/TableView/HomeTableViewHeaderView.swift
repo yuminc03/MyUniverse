@@ -1,5 +1,5 @@
 //
-//  HomeTableHeaderView.swift
+//  HomeTableViewHeaderView.swift
 //  MyUniverse
 //
 //  Created by Yumin Chu on 2023/03/19.
@@ -9,11 +9,12 @@ import UIKit
 
 import FlexLayout
 import PinLayout
+import DesignSystem
 
 final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.textColor = .white
+    v.textColor = DesignSystem.myUniColor(.purple100)
     v.font = .systemFont(ofSize: 20, weight: .bold)
     return v
   }()
