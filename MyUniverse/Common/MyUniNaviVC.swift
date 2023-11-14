@@ -7,6 +7,8 @@
 
 import UIKit
 
+import DesignSystem
+
 final class MyUniNaviVC: UINavigationController {
   var tabBar: MyUniCustomTabBar? {
     guard let tabBarController = parent as? MyUniTabBarController else {
@@ -15,10 +17,11 @@ final class MyUniNaviVC: UINavigationController {
     
     return tabBarController.customTabBar
   }
+  
   private let navigationBarAppearance: UINavigationBarAppearance = {
     let v = UINavigationBarAppearance()
-    v.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-    v.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    v.titleTextAttributes = [NSAttributedString.Key.foregroundColor: DesignSystem.myUniColor(.purple200)]
+    v.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: DesignSystem.myUniColor(.purple200)]
     return v
   }()
   

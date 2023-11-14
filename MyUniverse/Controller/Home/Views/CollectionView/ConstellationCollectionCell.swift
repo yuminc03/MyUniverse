@@ -7,6 +7,7 @@
 
 import UIKit
 
+import DesignSystem
 import FlexLayout
 import PinLayout
 
@@ -14,13 +15,13 @@ final class ConstellationCollectionCell: UICollectionViewCell {
   private let roundedRectangleView: UIView = {
     let v = UIView()
     v.layer.cornerRadius = 10
-    v.backgroundColor = myUniColor(.subColor)
+    v.backgroundColor = DesignSystem.myUniColor(.purple100)
     return v
   }()
   
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.textColor = myUniColor(.purple_B080FF)
+    v.textColor = DesignSystem.myUniColor(.purple200)
     v.font = .systemFont(ofSize: 16)
     return v
   }()
