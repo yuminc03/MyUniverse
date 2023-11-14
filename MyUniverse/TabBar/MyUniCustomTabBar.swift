@@ -47,7 +47,7 @@ final class MyUniCustomTabBar: UIStackView {
     alignment = .center
     distribution = .fillEqually
     layer.cornerRadius = 30
-    layer.shadowColor = myUniColor(.black_000000)?.cgColor
+    layer.shadowColor = UIColor.black.cgColor
     layer.shadowPath = UIBezierPath(rect: bounds).cgPath
     layer.shadowOpacity = 0.4
     layer.shadowRadius = 7

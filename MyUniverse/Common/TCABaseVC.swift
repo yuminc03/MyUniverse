@@ -29,6 +29,5 @@ class TCABaseVC<R: Reducer>: MyUniVC where R.State: Equatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
     }
 }

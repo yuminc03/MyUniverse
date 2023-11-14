@@ -7,6 +7,7 @@
 
 import UIKit
 
+import DesignSystem
 import ComposableArchitecture
 import FlexLayout
 import PinLayout
@@ -71,7 +72,6 @@ final class BirthConstellationDetailVC: TCABaseVC<BirthConstellationDetailCore> 
   private func setupUI() {
     setNavigationBarTitle("\(viewStore.constellation.name) - \(viewStore.constellation.rawValue.capitalized)")
     view.addSubview(containerView)
-    view.backgroundColor = myUniColor(.mainColor)
     dateLabel.text = viewStore.constellation.dateString
     imageView.image = UIImage(named: viewStore.constellation.characterImageName)
     contentsLabel.text = viewStore.constellation.description
