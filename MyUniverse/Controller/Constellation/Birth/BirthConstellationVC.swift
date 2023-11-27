@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 import DesignSystem
 import ComposableArchitecture
@@ -110,5 +111,12 @@ extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollection
     return item.sizeThatFits(
       CGSize(width: (UIScreen.main.bounds.width - 60) / 2, height: .greatestFiniteMagnitude)
     )
+  }
+}
+
+struct BirthConstellationVCPreview: PreviewProvider {
+  static var previews: some View {
+    BirthConstellationVC()
+      .preview()
   }
 }

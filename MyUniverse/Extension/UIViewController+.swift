@@ -1,8 +1,17 @@
 //
-//  File.swift
+//  UIViewController+.swift
 //  MyUniverse
 //
 //  Created by Yumin Chu on 2023/11/27.
 //
 
-import Foundation
+import UIKit
+import SwiftUI
+
+extension UIViewController {
+  func preview() -> some View {
+    UIViewControllerPreview {
+      self
+    }
+  }
+}
