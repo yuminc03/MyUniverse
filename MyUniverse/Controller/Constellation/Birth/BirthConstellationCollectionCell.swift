@@ -19,15 +19,6 @@ final class BirthConstellationCollectionCell: UICollectionViewCell {
     return v
   }()
   
-  private let gradientLayer: CAGradientLayer = {
-    let v = CAGradientLayer()
-    v.type = .radial
-    v.colors = [UIColor.systemYellow.cgColor, UIColor.white.cgColor]
-    v.startPoint = CGPoint(x: 0.5, y: 0.5)
-    v.endPoint = CGPoint(x: 1.0, y: 1.0)
-    return v
-  }()
-  
   private let imageView = UIImageView()
   
   private let constellationNameLabel: UILabel = {
@@ -48,12 +39,6 @@ final class BirthConstellationCollectionCell: UICollectionViewCell {
     super.init(frame: frame)
     setupUI()
     setupConstraints()
-  }
-  
-  override func draw(_ rect: CGRect) {
-    gradientLayer.frame = gradientCircleView.bounds
-    gradientCircleView.layer.cornerRadius = rect.width / 2
-    gradientCircleView.layer.insertSublayer(gradientLayer, at: 0)
   }
   
   override func layoutSubviews() {
