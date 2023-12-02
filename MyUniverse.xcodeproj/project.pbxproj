@@ -35,6 +35,9 @@
 		8D29AB3929B45F2200AD5072 /* MyUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */; };
 		8D29AB3B29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */; };
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
+		8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08902B14C45E00960B86 /* UIViewPreview.swift */; };
+		8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */; };
+		8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08942B14DB2500960B86 /* UIViewController+.swift */; };
 		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
 		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
 		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
@@ -93,6 +96,9 @@
 		8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITests.swift; sourceTree = "<group>"; };
 		8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
+		8D5A08902B14C45E00960B86 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		8D5A08942B14DB2500960B86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
 		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
 				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
 				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
+				8D5A08902B14C45E00960B86 /* UIViewPreview.swift */,
+				8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
 				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
 				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
+				8D5A08942B14DB2500960B86 /* UIViewController+.swift */,
 				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
 			);
 			path = Extension;
@@ -501,8 +510,11 @@
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
+				8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
+				8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
+				8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */,
 				8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */,
 				8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */,
 				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
