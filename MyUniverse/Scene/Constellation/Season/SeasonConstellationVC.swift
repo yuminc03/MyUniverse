@@ -69,7 +69,7 @@ final class SeasonConstellationVC: TCABaseVC<SeasonConstellationCore> {
   }
   
   private func setupUI() {
-    setNavigationBarTitle("탄생 별자리")
+    setNavigationBarTitle("계절별 별자리")
     view.addSubview(containerView)
     view.backgroundColor = DesignSystem.myUniColor(.BGColor)
     containerView.addSubview(collectionView)
