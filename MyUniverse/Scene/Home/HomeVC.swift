@@ -111,11 +111,20 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
     cell.updateUI(tag: indexPath.section)
-    cell.didSelectItem { [weak self] tag in
+    cell.didSelectItem { [weak self] tag, item in
       switch tag {
       case 0:
-        let vc = BirthConstellationVC()
-        self?.navi.pushViewController(vc, animated: true)
+        switch item {
+        case 0:
+          let vc = BirthConstellationVC()
+          self?.navi.pushViewController(vc, animated: true)
+          
+        case 1:
+          let vc = SeasonConstellationVC()
+          self?.navi.pushViewController(vc, animated: true)
+          
+        default: break
+        }
         
       case 1: break
         

@@ -37,6 +37,8 @@
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
 		8D44C0BD2B24822700775B65 /* SeasonConstellationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */; };
 		8D44C0BF2B2483DD00775B65 /* SeasonConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */; };
+		8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */; };
+		8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */; };
 		8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08902B14C45E00960B86 /* UIViewPreview.swift */; };
 		8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */; };
 		8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08942B14DB2500960B86 /* UIViewController+.swift */; };
@@ -100,6 +102,8 @@
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
 		8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellationVC.swift; sourceTree = "<group>"; };
 		8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellations.swift; sourceTree = "<group>"; };
+		8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellation.swift; sourceTree = "<group>"; };
+		8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D5A08902B14C45E00960B86 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		8D5A08942B14DB2500960B86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			children = (
 				8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */,
 				8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */,
+				8D44C0C22B248D8100775B65 /* CollectionView */,
 			);
 			path = Season;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			children = (
 				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
 				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
+				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +284,14 @@
 				8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */,
 			);
 			path = MyUniverseUITests;
+			sourceTree = "<group>";
+		};
+		8D44C0C22B248D8100775B65 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		8D871F0329C3534500FE4528 /* Home */ = {
@@ -516,6 +530,7 @@
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
+				8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */,
 				8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
 				8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */,
@@ -541,6 +556,7 @@
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
+				8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */,
 				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 				8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */,

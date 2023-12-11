@@ -41,7 +41,7 @@ final class SeasonConstellationVC: TCABaseVC<SeasonConstellationCore> {
     layout.scrollDirection = .vertical
     let v = UICollectionView(frame: .zero, collectionViewLayout: layout)
     v.backgroundColor = .clear
-    v.registerItem(type: BirthConstellationCollectionCell.self)
+    v.registerItem(type: SeasonConstellationCollectionCell.self)
     return v
   }()
   
@@ -83,15 +83,15 @@ extension SeasonConstellationVC: UICollectionViewDelegateFlowLayout, UICollectio
     _ collectionView: UICollectionView,
     numberOfItemsInSection section: Int
   ) -> Int {
-    return BirthConstellation.dummy.count
+    return SeasonConstellation.dummy.count
   }
   
   func collectionView(
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
-    let item = collectionView.dequeueItem(type: BirthConstellationCollectionCell.self, indexPath: indexPath)
-    item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    let item = collectionView.dequeueItem(type: SeasonConstellationCollectionCell.self, indexPath: indexPath)
+    item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
     return item
   }
   
@@ -105,10 +105,10 @@ extension SeasonConstellationVC: UICollectionViewDelegateFlowLayout, UICollectio
     layout collectionViewLayout: UICollectionViewLayout,
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
-    let item = BirthConstellationCollectionCell()
-    item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    let item = SeasonConstellationCollectionCell()
+    item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
     return item.sizeThatFits(
-      CGSize(width: (UIScreen.main.bounds.width - 60) / 2, height: .greatestFiniteMagnitude)
+      CGSize(width: UIScreen.main.bounds.width - 40, height: .greatestFiniteMagnitude)
     )
   }
 }

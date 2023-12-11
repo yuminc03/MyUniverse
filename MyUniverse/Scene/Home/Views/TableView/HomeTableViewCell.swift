@@ -29,7 +29,7 @@ final class HomeTableViewCell: UITableViewCell {
   private let constellation = Universe.constellationDummy
   private let solarSystem = Universe.solarSystemDummy
   private let interstellarMaterial = Universe.interstellarMaterialDummy
-  private var didSelectAction: ((Int) -> Void)?
+  private var didSelectAction: ((Int, Int) -> Void)?
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -82,7 +82,7 @@ final class HomeTableViewCell: UITableViewCell {
     collectionView.tag = tag
   }
   
-  func didSelectItem(_ action: @escaping (Int) -> Void) {
+  func didSelectItem(_ action: @escaping (Int, Int) -> Void) {
     self.didSelectAction = action
   }
 }
@@ -139,7 +139,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
   }
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    didSelectAction?(collectionView.tag)
+    didSelectAction?(collectionView.tag, indexPath.item)
   }
   
   func collectionView(
