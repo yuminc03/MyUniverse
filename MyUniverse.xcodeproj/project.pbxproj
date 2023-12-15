@@ -269,8 +269,6 @@
 				8DEFA09629BE1899004982CA /* TabBar */,
 				8DEFA09829BE18B4004982CA /* Scene */,
 				8DF941132B27337A00452292 /* Resource */,
-				8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */,
-				8D29AB2529B45F2200AD5072 /* Info.plist */,
 			);
 			path = MyUniverse;
 			sourceTree = "<group>";
@@ -368,6 +366,8 @@
 		8DF941132B27337A00452292 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8D29AB2529B45F2200AD5072 /* Info.plist */,
+				8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */,
 				8D29AB2029B45F2200AD5072 /* Image.xcassets */,
 				8DF941112B27336900452292 /* Color.xcassets */,
 			);
