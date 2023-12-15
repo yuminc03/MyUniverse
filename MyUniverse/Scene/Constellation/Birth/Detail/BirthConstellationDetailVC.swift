@@ -7,7 +7,6 @@
 
 import UIKit
 
-import DesignSystem
 import ComposableArchitecture
 import FlexLayout
 import PinLayout

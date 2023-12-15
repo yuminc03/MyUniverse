@@ -9,7 +9,6 @@ import UIKit
 
 import FlexLayout
 import PinLayout
-import DesignSystem
 
 final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   private let titleLabel: UILabel = {

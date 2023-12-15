@@ -11,7 +11,6 @@ import SwiftUI
 import ComposableArchitecture
 import FlexLayout
 import PinLayout
-import DesignSystem
 
 struct HomeCore: Reducer {
   struct State: Equatable {

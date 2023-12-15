@@ -10,7 +10,6 @@ import UIKit
 import ComposableArchitecture
 import PinLayout
 import FlexLayout
-import DesignSystem
 
 struct SeasonConstellationCore: Reducer {
   struct State: Equatable {

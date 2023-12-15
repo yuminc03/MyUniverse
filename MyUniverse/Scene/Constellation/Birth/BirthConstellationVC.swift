@@ -7,7 +7,6 @@
 
 import UIKit
 
-import DesignSystem
 import ComposableArchitecture
 import FlexLayout
 import PinLayout
@@ -72,7 +71,7 @@ final class BirthConstellationVC: TCABaseVC<BirthConstellationCore> {
   private func setupUI() {
     setNavigationBarTitle("탄생 별자리")
     view.addSubview(containerView)
-    view.backgroundColor = DesignSystem.myUniColor(.BGColor)
+    view.backgroundColor = UIColor(resource: R.color.bgColor)
     containerView.addSubview(collectionView)
     collectionView.delegate = self
     collectionView.dataSource = self
