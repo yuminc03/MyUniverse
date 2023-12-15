@@ -29,12 +29,16 @@
 		8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */; };
 		8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB1729B45F2100AD5072 /* AppDelegate.swift */; };
 		8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */; };
-		8D29AB2129B45F2200AD5072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D29AB2029B45F2200AD5072 /* Assets.xcassets */; };
+		8D29AB2129B45F2200AD5072 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D29AB2029B45F2200AD5072 /* Image.xcassets */; };
 		8D29AB2429B45F2200AD5072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */; };
 		8D29AB2F29B45F2200AD5072 /* MyUniverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB2E29B45F2200AD5072 /* MyUniverseTests.swift */; };
 		8D29AB3929B45F2200AD5072 /* MyUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */; };
 		8D29AB3B29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */; };
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
+		8D44C0BD2B24822700775B65 /* SeasonConstellationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */; };
+		8D44C0BF2B2483DD00775B65 /* SeasonConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */; };
+		8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */; };
+		8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */; };
 		8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08902B14C45E00960B86 /* UIViewPreview.swift */; };
 		8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */; };
 		8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08942B14DB2500960B86 /* UIViewController+.swift */; };
@@ -48,6 +52,9 @@
 		8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09B29BE1A39004982CA /* MyUniVC.swift */; };
 		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
 		8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09F29BE1E56004982CA /* HomeVC.swift */; };
+		8DF941122B27336900452292 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF941112B27336900452292 /* Color.xcassets */; };
+		8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941152B2733BB00452292 /* RswiftLibrary */; };
+		8DF941182B2733BB00452292 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941172B2733BB00452292 /* rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +94,7 @@
 		8D29AB1429B45F2100AD5072 /* MyUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D29AB1729B45F2100AD5072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D29AB2029B45F2200AD5072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D29AB2029B45F2200AD5072 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		8D29AB2329B45F2200AD5072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D29AB2529B45F2200AD5072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D29AB2A29B45F2200AD5072 /* MyUniverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUniverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +103,10 @@
 		8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITests.swift; sourceTree = "<group>"; };
 		8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
+		8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellationVC.swift; sourceTree = "<group>"; };
+		8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellations.swift; sourceTree = "<group>"; };
+		8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellation.swift; sourceTree = "<group>"; };
+		8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D5A08902B14C45E00960B86 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		8D5A08942B14DB2500960B86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
@@ -108,6 +119,7 @@
 		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
 		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
 		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8DF941112B27336900452292 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,8 @@
 				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
 				8D2110F92AF64556006F517E /* DesignSystem in Frameworks */,
+				8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */,
+				8DF941182B2733BB00452292 /* rswift in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
 				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
@@ -204,6 +218,9 @@
 		8D238C8B2ACAB85400D3DFDD /* Season */ = {
 			isa = PBXGroup;
 			children = (
+				8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */,
+				8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */,
+				8D44C0C22B248D8100775B65 /* CollectionView */,
 			);
 			path = Season;
 			sourceTree = "<group>";
@@ -213,6 +230,7 @@
 			children = (
 				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
 				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
+				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,8 +267,8 @@
 				8D25A5162ABEB38400F71B04 /* Model */,
 				8D12DA932A7F47FF00B2C190 /* Common */,
 				8DEFA09629BE1899004982CA /* TabBar */,
-				8DEFA09829BE18B4004982CA /* Controller */,
-				8D29AB2029B45F2200AD5072 /* Assets.xcassets */,
+				8DEFA09829BE18B4004982CA /* Scene */,
+				8DF941132B27337A00452292 /* Resource */,
 				8D29AB2229B45F2200AD5072 /* LaunchScreen.storyboard */,
 				8D29AB2529B45F2200AD5072 /* Info.plist */,
 			);
@@ -272,6 +290,14 @@
 				8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */,
 			);
 			path = MyUniverseUITests;
+			sourceTree = "<group>";
+		};
+		8D44C0C22B248D8100775B65 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		8D871F0329C3534500FE4528 /* Home */ = {
@@ -329,14 +355,23 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		8DEFA09829BE18B4004982CA /* Controller */ = {
+		8DEFA09829BE18B4004982CA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				8D871F0329C3534500FE4528 /* Home */,
 				8D238C862ACAB5A300D3DFDD /* Constellation */,
 				8D12DAA72A7F88D400B2C190 /* Menu */,
 			);
-			path = Controller;
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		8DF941132B27337A00452292 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8D29AB2029B45F2200AD5072 /* Image.xcassets */,
+				8DF941112B27336900452292 /* Color.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +389,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8DF9411A2B27345700452292 /* PBXTargetDependency */,
 			);
 			name = MyUniverse;
 			packageProductDependencies = (
@@ -363,6 +399,8 @@
 				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
 				8D238C822ACA493800D3DFDD /* PinLayout */,
 				8D2110F82AF64556006F517E /* DesignSystem */,
+				8DF941152B2733BB00452292 /* RswiftLibrary */,
+				8DF941172B2733BB00452292 /* rswift */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -442,6 +480,7 @@
 				8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */,
+				8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 8D29AB1529B45F2100AD5072 /* Products */;
 			projectDirPath = "";
@@ -460,8 +499,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */,
+				8DF941122B27336900452292 /* Color.xcassets in Resources */,
 				8D29AB2429B45F2200AD5072 /* LaunchScreen.storyboard in Resources */,
-				8D29AB2129B45F2200AD5072 /* Assets.xcassets in Resources */,
+				8D29AB2129B45F2200AD5072 /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +550,7 @@
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
+				8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */,
 				8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
 				8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */,
@@ -526,13 +567,16 @@
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
+				8D44C0BD2B24822700775B65 /* SeasonConstellationVC.swift in Sources */,
 				8D238D662ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift in Sources */,
 				8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */,
 				8D25A5182ABEBB5800F71B04 /* Universe.swift in Sources */,
+				8D44C0BF2B2483DD00775B65 /* SeasonConstellations.swift in Sources */,
 				8D12DA9D2A7F7AEE00B2C190 /* MyUniCustomTabBar.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
+				8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */,
 				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 				8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */,
@@ -568,6 +612,10 @@
 			isa = PBXTargetDependency;
 			target = 8D29AB1329B45F2100AD5072 /* MyUniverse */;
 			targetProxy = 8D29AB3529B45F2200AD5072 /* PBXContainerItemProxy */;
+		};
+		8DF9411A2B27345700452292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8DF941192B27345700452292 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -915,6 +963,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -946,6 +1002,20 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8DEFA09329BE0C60004982CA /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		8DF941152B2733BB00452292 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		8DF941172B2733BB00452292 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
+			productName = rswift;
+		};
+		8DF941192B27345700452292 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
