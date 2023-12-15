@@ -53,6 +53,7 @@
 		8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */; };
 		8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFA09F29BE1E56004982CA /* HomeVC.swift */; };
 		8DF78BFE2B2C14B80007DD20 /* PlanetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */; };
+		8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78C002B2C1E800007DD20 /* Planets.swift */; };
 		8DF941122B27336900452292 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF941112B27336900452292 /* Color.xcassets */; };
 		8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941152B2733BB00452292 /* RswiftLibrary */; };
 		8DF941182B2733BB00452292 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941172B2733BB00452292 /* rswift */; };
@@ -121,6 +122,7 @@
 		8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniNaviVC.swift; sourceTree = "<group>"; };
 		8DEFA09F29BE1E56004982CA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsVC.swift; sourceTree = "<group>"; };
+		8DF78C002B2C1E800007DD20 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		8DF941112B27336900452292 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -371,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */,
+				8DF78C002B2C1E800007DD20 /* Planets.swift */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
+				8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
 				8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */,
