@@ -93,6 +93,7 @@ extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollection
   ) -> UICollectionViewCell {
     let item = collectionView.dequeueItem(type: BirthConstellationCollectionCell.self, indexPath: indexPath)
     item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    item.updateImage(index: indexPath.item)
     return item
   }
   
@@ -108,6 +109,7 @@ extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollection
   ) -> CGSize {
     let item = BirthConstellationCollectionCell()
     item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    item.updateImage(index: indexPath.item)
     return item.sizeThatFits(
       CGSize(width: (UIScreen.main.bounds.width - 60) / 2, height: .greatestFiniteMagnitude)
     )

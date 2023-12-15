@@ -71,7 +71,7 @@ final class SeasonConstellationVC: TCABaseVC<SeasonConstellationCore> {
   private func setupUI() {
     setNavigationBarTitle("계절별 별자리")
     view.addSubview(containerView)
-    view.backgroundColor = DesignSystem.myUniColor(.BGColor)
+    view.backgroundColor = UIColor(resource: R.color.bgColor)
     containerView.addSubview(collectionView)
     collectionView.delegate = self
     collectionView.dataSource = self
@@ -92,6 +92,7 @@ extension SeasonConstellationVC: UICollectionViewDelegateFlowLayout, UICollectio
   ) -> UICollectionViewCell {
     let item = collectionView.dequeueItem(type: SeasonConstellationCollectionCell.self, indexPath: indexPath)
     item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
+    item.updateImage(index: indexPath.item)
     return item
   }
   
@@ -107,6 +108,7 @@ extension SeasonConstellationVC: UICollectionViewDelegateFlowLayout, UICollectio
   ) -> CGSize {
     let item = SeasonConstellationCollectionCell()
     item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
+    item.updateImage(index: indexPath.item)
     return item.sizeThatFits(
       CGSize(width: UIScreen.main.bounds.width - 40, height: .greatestFiniteMagnitude)
     )

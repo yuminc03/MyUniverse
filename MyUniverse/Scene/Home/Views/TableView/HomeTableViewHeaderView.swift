@@ -14,7 +14,7 @@ import DesignSystem
 final class HomeTableViewHeaderView: UITableViewHeaderFooterView {
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.textColor = DesignSystem.myUniColor(.purple100)
+    v.textColor = UIColor(resource: R.color.purple100)
     v.font = .systemFont(ofSize: 20, weight: .bold)
     return v
   }()

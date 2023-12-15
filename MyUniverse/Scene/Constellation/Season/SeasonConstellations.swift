@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum SeasonConstellations: String, CaseIterable {
   case spring
@@ -47,19 +48,19 @@ enum SeasonConstellations: String, CaseIterable {
   }
   
   /// 이미지 이름
-  var imageName: String {
+  var image: UIImage? {
     switch self {
     case .spring:
-      return "spring_star"
+      return UIImage(resource: R.image.constellation.season.spring_star)
       
     case .summer:
-      return "summer_star"
+      return UIImage(resource: R.image.constellation.season.summer_star)
       
     case .fall:
-      return "fall_star"
+      return UIImage(resource: R.image.constellation.season.fall_star)
       
     case .winter:
-      return "winter_star"
+      return UIImage(resource: R.image.constellation.season.winter_star)
     }
   }
 }

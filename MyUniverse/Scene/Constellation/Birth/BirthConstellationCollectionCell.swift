@@ -80,6 +80,9 @@ final class BirthConstellationCollectionCell: UICollectionViewCell {
   func updateUI(constellation: BirthConstellation) {
     constellationNameLabel.text = constellation.name
     constellationDateLabel.text = constellation.date
-    imageView.image = UIImage(named: constellation.imageName)
+  }
+  
+  func updateImage(index: Int) {
+    imageView.image = BirthConstellations.allCases[index].characterImage
   }
 }

@@ -13,9 +13,8 @@ struct BirthConstellation: Equatable, Identifiable {
   let id = UUID()
   let name: String
   let date: String
-  let imageName: String
   
   static let dummy = BirthConstellations.allCases.map {
-    BirthConstellation(name: $0.name, date: $0.dateString, imageName: $0.characterImageName)
+    BirthConstellation(name: $0.name, date: $0.dateString)
   }
 }

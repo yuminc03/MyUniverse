@@ -73,7 +73,7 @@ final class BirthConstellationDetailVC: TCABaseVC<BirthConstellationDetailCore> 
     setNavigationBarTitle("\(viewStore.constellation.name) - \(viewStore.constellation.rawValue.capitalized)")
     view.addSubview(containerView)
     dateLabel.text = viewStore.constellation.dateString
-    imageView.image = UIImage(named: viewStore.constellation.characterImageName)
+    imageView.image = viewStore.constellation.characterImage
     contentsLabel.text = viewStore.constellation.description
   }
   

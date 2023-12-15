@@ -67,7 +67,7 @@ final class HomeVC: TCABaseVC<HomeCore> {
   private func setupUI() {
     setNavigationBarTitle("내 맘의 별들⭐️")
     navi.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = DesignSystem.myUniColor(.BGColor)
+    view.backgroundColor = UIColor(resource: R.color.bgColor)
     view.addSubview(containerView)
     containerView.addSubview(tableView)
     let footer = UIView(

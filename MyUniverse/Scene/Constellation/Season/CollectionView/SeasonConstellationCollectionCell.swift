@@ -14,27 +14,33 @@ import PinLayout
 final class SeasonConstellationCollectionCell: UICollectionViewCell {
   private let roundedRectangleView: UIView = {
     let v = UIView()
-    v.layer.cornerRadius = 10
-    v.backgroundColor = DesignSystem.myUniColor(.purple100)
+    v.layer.cornerRadius = 20
+    v.backgroundColor = UIColor(resource: R.color.purple200)
+    v.layer.masksToBounds = true
     return v
   }()
   
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.textColor = DesignSystem.myUniColor(.purple200)
+    v.textColor = UIColor(resource: R.color.purple100)
     v.font = .systemFont(ofSize: 16)
     return v
   }()
   
   private let descriptionLabel: UILabel = {
     let v = UILabel()
-    v.textColor = DesignSystem.myUniColor(.purple100)
+    v.textColor = UIColor(resource: R.color.purple100)
     v.font = .systemFont(ofSize: 14)
     v.numberOfLines = 0
     return v
   }()
   
-  private let imageView = UIImageView()
+  private let imageView: UIImageView = {
+    let v = UIImageView()
+    v.layer.cornerRadius = 20
+    v.layer.masksToBounds = true
+    return v
+  }()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -64,8 +70,8 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
   
   private func setupConstraints() {
     contentView.flex.direction(.column).define {
-      $0.addItem(roundedRectangleView).define {
-        $0.addItem(imageView).height(100)
+      $0.addItem(roundedRectangleView).padding(20).define {
+        $0.addItem(imageView)
         $0.addItem(titleLabel).marginTop(10)
         $0.addItem(descriptionLabel).marginTop(10)
       }
@@ -75,6 +81,9 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
   func updateUI(data: SeasonConstellation) {
     titleLabel.text = data.name
     descriptionLabel.text = data.description
-    imageView.image = UIImage(named: data.imageName)
+  }
+  
+  func updateImage(index: Int) {
+    imageView.image = SeasonConstellations.allCases[index].image
   }
 }

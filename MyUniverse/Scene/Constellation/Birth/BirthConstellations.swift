@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// 탄생 별자리
 enum BirthConstellations: String, CaseIterable {
@@ -40,9 +41,45 @@ enum BirthConstellations: String, CaseIterable {
     }
   }
   
-  /// 캐릭터 이미지 이름
-  var characterImageName: String {
-    return "char_" + rawValue
+  /// 캐릭터 이미지
+  var characterImage: UIImage? {
+    switch self {
+    case .aquarius:
+      return UIImage(resource: R.image.constellation.birth.char_aquarius)
+      
+    case .pisces:
+      return UIImage(resource: R.image.constellation.birth.char_pisces)
+      
+    case .aries:
+      return UIImage(resource: R.image.constellation.birth.char_aries)
+      
+    case .taurus:
+      return UIImage(resource: R.image.constellation.birth.char_taurus)
+      
+    case .gemini:
+      return UIImage(resource: R.image.constellation.birth.char_gemini)
+      
+    case .cancer:
+      return UIImage(resource: R.image.constellation.birth.char_cancer)
+      
+    case .leo:
+      return UIImage(resource: R.image.constellation.birth.char_leo)
+      
+    case .virgo:
+      return UIImage(resource: R.image.constellation.birth.char_virgo)
+      
+    case .libra:
+      return UIImage(resource: R.image.constellation.birth.char_libra)
+      
+    case .scorpio:
+      return UIImage(resource: R.image.constellation.birth.char_scorpio)
+      
+    case .sagittarius:
+      return UIImage(resource: R.image.constellation.birth.char_sagittarius)
+      
+    case .capricorn:
+      return UIImage(resource: R.image.constellation.birth.char_capricorn)
+    }
   }
   
   /// 날짜
