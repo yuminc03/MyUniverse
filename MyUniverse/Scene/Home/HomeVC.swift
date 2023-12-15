@@ -77,6 +77,44 @@ final class HomeVC: TCABaseVC<HomeCore> {
     tableView.delegate = self
     tableView.dataSource = self
   }
+  
+  private func pushVC(tag row: Int, item: Int) {
+    switch row {
+    case 0:
+      switch item {
+      case 0:
+        let vc = BirthConstellationVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        let vc = SeasonConstellationVC()
+        navi.pushViewController(vc, animated: true)
+        
+      default:
+        break
+      }
+      
+    case 1:
+      switch item {
+      case 0:
+        let vc = PlanetsVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        break
+        
+      case 2:
+        break
+        
+      default:
+        break
+      }
+      
+    case 2: break
+      
+    default: break
+    }
+  }
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -111,26 +149,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     let cell = tableView.dequeueCell(type: HomeTableViewCell.self, indexPath: indexPath)
     cell.updateUI(tag: indexPath.section)
     cell.didSelectItem { [weak self] tag, item in
-      switch tag {
-      case 0:
-        switch item {
-        case 0:
-          let vc = BirthConstellationVC()
-          self?.navi.pushViewController(vc, animated: true)
-          
-        case 1:
-          let vc = SeasonConstellationVC()
-          self?.navi.pushViewController(vc, animated: true)
-          
-        default: break
-        }
-        
-      case 1: break
-        
-      case 2: break
-        
-      default: break
-      }
+      self?.pushVC(tag: tag, item: item)
     }
     return cell
   }
