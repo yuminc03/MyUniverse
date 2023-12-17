@@ -46,6 +46,8 @@
 		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
 		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
+		8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A5F2B2F2B2B006D6532 /* Planet.swift */; };
+		8DD99A622B2F35C4006D6532 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
 		8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */; };
 		8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEFA09429BE0C60004982CA /* SnapKit */; };
@@ -116,6 +118,8 @@
 		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
 		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		8DD99A5F2B2F2B2B006D6532 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
 		8DEACCC829C72E9D0043DA10 /* SolarSystemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemCollectionCell.swift; sourceTree = "<group>"; };
 		8DEFA09B29BE1A39004982CA /* MyUniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniVC.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
 				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
 				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
+				8DD99A5F2B2F2B2B006D6532 /* Planet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,8 +377,9 @@
 		8DF78BFC2B2C14970007DD20 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */,
 				8DF78C002B2C1E800007DD20 /* Planets.swift */,
+				8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */,
+				8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
 				8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
+				8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */,
 				8D238D682ACC5A6900D3DFDD /* BirthConstellationVC.swift in Sources */,
 				8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */,
 				8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */,
@@ -576,6 +583,7 @@
 				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
 				8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */,
 				8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */,
+				8DD99A622B2F35C4006D6532 /* PlanetCollectionViewCell.swift in Sources */,
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
 				8D12DAA22A7F7EB000B2C190 /* CustomItemView.swift in Sources */,
 				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
