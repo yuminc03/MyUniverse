@@ -1,8 +1,8 @@
 //
-//  BirthConstellationVC.swift
+//  PlanetsVC.swift
 //  MyUniverse
 //
-//  Created by Yumin Chu on 2023/10/03.
+//  Created by Yumin Chu on 2023/12/15.
 //
 
 import UIKit
@@ -11,10 +11,9 @@ import ComposableArchitecture
 import FlexLayout
 import PinLayout
 
-/// 탄생 별자리
-struct BirthConstellationCore: Reducer {
+struct PlanetsCore: Reducer {
   struct State: Equatable {
-    let constellations = BirthConstellations.allCases
+    let planets = Planet.dummy
   }
   
   enum Action {
@@ -26,7 +25,7 @@ struct BirthConstellationCore: Reducer {
   }
 }
 
-final class BirthConstellationVC: TCABaseVC<BirthConstellationCore> {
+final class PlanetsVC: TCABaseVC<PlanetsCore> {
   private let containerView: UIView = {
     let v = UIView()
     v.backgroundColor = .clear
@@ -41,13 +40,13 @@ final class BirthConstellationVC: TCABaseVC<BirthConstellationCore> {
     layout.scrollDirection = .vertical
     let v = UICollectionView(frame: .zero, collectionViewLayout: layout)
     v.backgroundColor = .clear
-    v.registerItem(type: BirthConstellationCollectionCell.self)
+    v.registerItem(type: PlanetCollectionViewCell.self)
     return v
   }()
   
   init() {
-    let store = Store(initialState: BirthConstellationCore.State()) {
-      BirthConstellationCore()
+    let store = Store(initialState: PlanetsCore.State()) {
+      PlanetsCore()
     }
     super.init(store: store)
   }
@@ -69,36 +68,30 @@ final class BirthConstellationVC: TCABaseVC<BirthConstellationCore> {
   }
   
   private func setupUI() {
-    setNavigationBarTitle("탄생 별자리")
-    view.addSubview(containerView)
+    setNavigationBarTitle("행성🪐")
     view.backgroundColor = UIColor(resource: R.color.bgColor)
+    view.addSubview(containerView)
     containerView.addSubview(collectionView)
     collectionView.delegate = self
     collectionView.dataSource = self
   }
 }
 
-extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-  func collectionView(
-    _ collectionView: UICollectionView,
-    numberOfItemsInSection section: Int
-  ) -> Int {
-    return BirthConstellation.dummy.count
+// MARK: - UICollectionViewDelegateFlowLayout & UICollectionViewDataSource
+
+extension PlanetsVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return viewStore.planets.count
   }
   
   func collectionView(
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
-    let item = collectionView.dequeueItem(type: BirthConstellationCollectionCell.self, indexPath: indexPath)
-    item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    let item = collectionView.dequeueItem(type: PlanetCollectionViewCell.self, indexPath: indexPath)
+    item.updateUI(planet: viewStore.planets[indexPath.item])
     item.updateImage(index: indexPath.item)
     return item
-  }
-  
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let vc = BirthConstellationDetailVC(constellation: viewStore.constellations[indexPath.row])
-    navi.pushViewController(vc, animated: true)
   }
   
   func collectionView(
@@ -106,11 +99,12 @@ extension BirthConstellationVC: UICollectionViewDelegateFlowLayout, UICollection
     layout collectionViewLayout: UICollectionViewLayout,
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
-    let item = BirthConstellationCollectionCell()
-    item.updateUI(constellation: BirthConstellation.dummy[indexPath.item])
+    let item = PlanetCollectionViewCell()
+    item.updateUI(planet: viewStore.planets[indexPath.item])
     item.updateImage(index: indexPath.item)
     return item.sizeThatFits(
       CGSize(width: (UIScreen.main.bounds.width - 60) / 2, height: .greatestFiniteMagnitude)
     )
   }
+  
 }

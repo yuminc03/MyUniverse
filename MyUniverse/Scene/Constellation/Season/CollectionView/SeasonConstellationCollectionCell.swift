@@ -7,7 +7,6 @@
 
 import UIKit
 
-import DesignSystem
 import FlexLayout
 import PinLayout
 

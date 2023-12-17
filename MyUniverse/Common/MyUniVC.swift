@@ -7,8 +7,6 @@
 
 import UIKit
 
-import DesignSystem
-
 class MyUniVC: UIViewController {
   
   var navi: MyUniNaviVC {
@@ -25,7 +23,7 @@ class MyUniVC: UIViewController {
   }
   
   private func setupUI() {
-    view.backgroundColor = DesignSystem.myUniColor(.BGColor)
+    view.backgroundColor = UIColor(resource: R.color.bgColor)
   }
   
   func setNavigationBarTitle(_ text: String) {
