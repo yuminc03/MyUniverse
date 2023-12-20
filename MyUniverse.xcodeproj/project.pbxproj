@@ -35,6 +35,7 @@
 		8D29AB3929B45F2200AD5072 /* MyUniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */; };
 		8D29AB3B29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */; };
 		8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */; };
+		8D37D80A2B318ACC0081807C /* SunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D8092B318ACC0081807C /* SunVC.swift */; };
 		8D44C0BD2B24822700775B65 /* SeasonConstellationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */; };
 		8D44C0BF2B2483DD00775B65 /* SeasonConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */; };
 		8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */; };
@@ -107,6 +108,7 @@
 		8D29AB3829B45F2200AD5072 /* MyUniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITests.swift; sourceTree = "<group>"; };
 		8D29AB3A29B45F2200AD5072 /* MyUniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D29AB4729B4691B00AD5072 /* MyUniTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUniTabBarController.swift; sourceTree = "<group>"; };
+		8D37D8092B318ACC0081807C /* SunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunVC.swift; sourceTree = "<group>"; };
 		8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellationVC.swift; sourceTree = "<group>"; };
 		8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellations.swift; sourceTree = "<group>"; };
 		8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonConstellation.swift; sourceTree = "<group>"; };
@@ -299,6 +301,14 @@
 			path = MyUniverseUITests;
 			sourceTree = "<group>";
 		};
+		8D37D8082B318AC40081807C /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+				8D37D8092B318ACC0081807C /* SunVC.swift */,
+			);
+			path = Sun;
+			sourceTree = "<group>";
+		};
 		8D44C0C22B248D8100775B65 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +375,7 @@
 		8DEFA09829BE18B4004982CA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				8D37D8082B318AC40081807C /* Sun */,
 				8DEFA09629BE1899004982CA /* TabBar */,
 				8D871F0329C3534500FE4528 /* Home */,
 				8D238C862ACAB5A300D3DFDD /* Constellation */,
@@ -600,6 +611,7 @@
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
+				8D37D80A2B318ACC0081807C /* SunVC.swift in Sources */,
 				8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */,
 				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
