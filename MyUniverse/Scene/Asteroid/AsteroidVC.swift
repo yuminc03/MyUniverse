@@ -20,8 +20,8 @@ struct AsteroidCore: Reducer {
     
   }
   
-  func reduce(into state: inout State, action: Action) -> Effect<Action> {
-    return .none
+  var body: some ReducerOf<Self> {
+    EmptyReducer()
   }
 }
 
@@ -33,9 +33,15 @@ final class AsteroidVC: TCABaseVC<AsteroidCore> {
     return v
   }()
   
+  private let scrollView: UIScrollView = {
+    let v = UIScrollView()
+    v.backgroundColor = .clear
+    return v
+  }()
+  
   private let imageView: UIImageView = {
     let v = UIImageView()
-    v.image = UIImage(resource: R.image.solar.sun)
+    v.image = UIImage(resource: R.image.asteroid)
     v.contentMode = .scaleAspectFit
     return v
   }()
@@ -64,6 +70,14 @@ final class AsteroidVC: TCABaseVC<AsteroidCore> {
     })
   }
   
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    scrollView.pin.all()
+    containerView.pin.top().left().right()
+    containerView.flex.layout(mode: .adjustHeight)
+    scrollView.contentSize = containerView.frame.size
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
@@ -73,7 +87,8 @@ final class AsteroidVC: TCABaseVC<AsteroidCore> {
   private func setupUI() {
     setNavigationBarTitle("소행성🪨")
     view.backgroundColor = UIColor(resource: R.color.bgColor)
-    view.addSubview(containerView)
+    view.addSubview(scrollView)
+    scrollView.addSubview(containerView)
   }
   
   private func setupConstraints() {
