@@ -1,8 +1,8 @@
 //
-//  SunVC.swift
+//  AsteroidVC.swift
 //  MyUniverse
 //
-//  Created by Yumin Chu on 2023/12/19.
+//  Created by Yumin Chu on 2023/12/21.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import ComposableArchitecture
 import FlexLayout
 import PinLayout
 
-struct SunCore: Reducer {
+struct AsteroidCore: Reducer {
   struct State: Equatable {
     
   }
@@ -25,7 +25,7 @@ struct SunCore: Reducer {
   }
 }
 
-final class SunVC: TCABaseVC<SunCore> {
+final class AsteroidVC: TCABaseVC<AsteroidCore> {
   
   private let containerView: UIView = {
     let v = UIView()
@@ -41,14 +41,14 @@ final class SunVC: TCABaseVC<SunCore> {
   
   private let imageView: UIImageView = {
     let v = UIImageView()
-    v.image = UIImage(resource: R.image.solar.sun)
+    v.image = UIImage(resource: R.image.asteroid)
     v.contentMode = .scaleAspectFit
     return v
   }()
   
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.text = "태양계에서 유일하게 스스로 빛을 내는 천체로, 지구와 가장 가까운 별."
+    v.text = "태양 주위를 공전하는 행성보다 크기가 작고 타원형 또는 불규칙한 모양의 천체이다."
     v.textColor = UIColor(resource: R.color.purple100)
     v.font = .systemFont(ofSize: 20, weight: .semibold)
     v.numberOfLines = 0
@@ -57,7 +57,7 @@ final class SunVC: TCABaseVC<SunCore> {
   
   private let descriptionLabel: UILabel = {
     let v = UILabel()
-    v.text = "태양의 표면\n쌀알무늬: 광구에 나타나는 작고 밝은 쌀알 모양의 무늬이다. 내부의 대류현상에 의해 나타난다.\n흑점: 광구에 나타나는 검은 점, 주위보다 온도가 약 2000℃ 낮아 어둡게 보인다.\n태양의 대기 - 평소에는 관측이 어렵고 개기 일식 때 잘 관측된다.\n채층 - 광구 바로 위의 붉은 색을 띤 얇은 대기층이다.\n코로나 - 채층 위로 멀리까지 뻗어있는 대기층으로 온도가 100만 ℃ 이상이다.\n홍염 - 채층 위로 수십만 km까지 솟아오르는 거대한 불기둥이다.\n플레어 - 흑점 부근의 폭발로 많은 양의 에너지가 방출되는 현상이다."
+    v.text = "주로 화성과 목성의 궤도 사이에 띠를 이루며 집중적으로 분포한다.(소행성대)\n처음으로 발견된 소행성은 세레스이며 일부 소행성은 자신의 위성을 가지고 있다. 가스로 된 코마나 꼬리를 가지지 않는다는 점에서 혜성과 구분되지만, 일부 소행성은 과거에 혜성이었다.\n그래서 목성 궤도 밖의 천체를 포함해 소행성체로 구분한다."
     v.textColor = UIColor(resource: R.color.purple100)
     v.font = .systemFont(ofSize: 16, weight: .medium)
     v.numberOfLines = 0
@@ -65,15 +65,9 @@ final class SunVC: TCABaseVC<SunCore> {
   }()
   
   init() {
-    super.init(store: Store(initialState: SunCore.State()) {
-      SunCore()
+    super.init(store: .init(initialState: AsteroidCore.State()) {
+      AsteroidCore()
     })
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    setupUI()
-    setupConstraints()
   }
   
   override func viewDidLayoutSubviews() {
@@ -84,8 +78,14 @@ final class SunVC: TCABaseVC<SunCore> {
     scrollView.contentSize = containerView.frame.size
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupUI()
+    setupConstraints()
+  }
+  
   private func setupUI() {
-    setNavigationBarTitle("태양☀️")
+    setNavigationBarTitle("소행성🪨")
     view.backgroundColor = UIColor(resource: R.color.bgColor)
     view.addSubview(scrollView)
     scrollView.addSubview(containerView)

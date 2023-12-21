@@ -24,8 +24,8 @@ struct HomeCore: Reducer {
     
   }
   
-  func reduce(into state: inout State, action: Action) -> Effect<Action> {
-    return .none
+  var body: some ReducerOf<Self> {
+    EmptyReducer()
   }
 }
 
@@ -104,6 +104,19 @@ final class HomeVC: TCABaseVC<HomeCore> {
         let vc = SunVC()
         navi.pushViewController(vc, animated: true)
         
+      default:
+        break
+      }
+      
+    case 2:
+      switch item {
+      case 0:
+        let vc = AsteroidVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        break
+        
       case 2:
         break
         
@@ -111,9 +124,8 @@ final class HomeVC: TCABaseVC<HomeCore> {
         break
       }
       
-    case 2: break
-      
-    default: break
+    default: 
+      break
     }
   }
 }
