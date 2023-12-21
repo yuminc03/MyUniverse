@@ -24,8 +24,8 @@ struct HomeCore: Reducer {
     
   }
   
-  func reduce(into state: inout State, action: Action) -> Effect<Action> {
-    return .none
+  var body: some ReducerOf<Self> {
+    EmptyReducer()
   }
 }
 
