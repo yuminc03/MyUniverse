@@ -25,6 +25,12 @@ struct NebulaCore: Reducer {
 
 final class NebulaVC: TCABaseVC<NebulaCore> {
   
+  private let containerView: UIView = {
+    let v = UIView()
+    v.backgroundColor = .clear
+    return v
+  }()
+  
   init() {
     super.init(store: .init(initialState: NebulaCore.State()) {
       NebulaCore()
