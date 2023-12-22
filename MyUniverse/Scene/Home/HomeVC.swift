@@ -115,7 +115,8 @@ final class HomeVC: TCABaseVC<HomeCore> {
         navi.pushViewController(vc, animated: true)
         
       case 1:
-        break
+        let vc = NebulaVC()
+        navi.pushViewController(vc, animated: true)
         
       case 2:
         break

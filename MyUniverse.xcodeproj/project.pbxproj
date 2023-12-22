@@ -48,6 +48,7 @@
 		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
 		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
+		8DCBB8102B35CFBE00E37861 /* NebulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */; };
 		8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A5F2B2F2B2B006D6532 /* Planet.swift */; };
 		8DD99A622B2F35C4006D6532 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
@@ -122,6 +123,7 @@
 		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
 		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaVC.swift; sourceTree = "<group>"; };
 		8DD99A5F2B2F2B2B006D6532 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
@@ -353,6 +355,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		8DCBB80E2B35CFB100E37861 /* Nebula */ = {
+			isa = PBXGroup;
+			children = (
+				8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */,
+			);
+			path = Nebula;
+			sourceTree = "<group>";
+		};
 		8DEACCC629C72E740043DA10 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +395,7 @@
 		8DEFA09829BE18B4004982CA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				8DCBB80E2B35CFB100E37861 /* Nebula */,
 				8D4A322B2B34692000623CF9 /* Asteroid */,
 				8D37D8082B318AC40081807C /* Sun */,
 				8DEFA09629BE1899004982CA /* TabBar */,
@@ -590,6 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
+				8DCBB8102B35CFBE00E37861 /* NebulaVC.swift in Sources */,
 				8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */,
