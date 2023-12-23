@@ -38,6 +38,7 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
     let v = UIImageView()
     v.layer.cornerRadius = 20
     v.layer.masksToBounds = true
+    v.contentMode = .scaleAspectFit
     return v
   }()
   
@@ -70,7 +71,7 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
   private func setupConstraints() {
     contentView.flex.direction(.column).define {
       $0.addItem(roundedRectangleView).padding(20).define {
-        $0.addItem(imageView)
+        $0.addItem(imageView).aspectRatio(5/3)
         $0.addItem(titleLabel).marginTop(10)
         $0.addItem(descriptionLabel).marginTop(10)
       }
