@@ -1,8 +1,8 @@
 //
-//  SeasonConstellationCollectionCell.swift
+//  NebulaCollectionViewCell.swift
 //  MyUniverse
 //
-//  Created by Yumin Chu on 2023/12/09.
+//  Created by Yumin Chu on 2023/12/23.
 //
 
 import UIKit
@@ -10,26 +10,27 @@ import UIKit
 import FlexLayout
 import PinLayout
 
-final class SeasonConstellationCollectionCell: UICollectionViewCell {
+final class NebulaCollectionViewCell: UICollectionViewCell {
   private let roundedRectangleView: UIView = {
     let v = UIView()
     v.layer.cornerRadius = 20
-    v.backgroundColor = UIColor(resource: R.color.purple200)
+    v.backgroundColor = UIColor(resource: R.color.purple100)
     v.layer.masksToBounds = true
     return v
   }()
   
   private let titleLabel: UILabel = {
     let v = UILabel()
-    v.textColor = UIColor(resource: R.color.purple100)
-    v.font = .systemFont(ofSize: 16)
+    v.textColor = UIColor(resource: R.color.purple200)
+    v.font = .systemFont(ofSize: 18)
+    v.numberOfLines = 0
     return v
   }()
   
   private let descriptionLabel: UILabel = {
     let v = UILabel()
-    v.textColor = UIColor(resource: R.color.purple100)
-    v.font = .systemFont(ofSize: 14)
+    v.textColor = UIColor(resource: R.color.purple200)
+    v.font = .systemFont(ofSize: 16)
     v.numberOfLines = 0
     return v
   }()
@@ -38,7 +39,6 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
     let v = UIImageView()
     v.layer.cornerRadius = 20
     v.layer.masksToBounds = true
-    v.contentMode = .scaleAspectFit
     return v
   }()
   
@@ -71,19 +71,19 @@ final class SeasonConstellationCollectionCell: UICollectionViewCell {
   private func setupConstraints() {
     contentView.flex.direction(.column).define {
       $0.addItem(roundedRectangleView).padding(20).define {
-        $0.addItem(imageView).aspectRatio(5/3)
+        $0.addItem(imageView).aspectRatio(1.0)
         $0.addItem(titleLabel).marginTop(10)
         $0.addItem(descriptionLabel).marginTop(10)
       }
     }
   }
   
-  func updateUI(data: SeasonConstellation) {
+  func updateUI(data: NebulaModel) {
     titleLabel.text = data.name
     descriptionLabel.text = data.description
   }
   
   func updateImage(index: Int) {
-    imageView.image = SeasonConstellations.allCases[index].image
+    imageView.image = Nebula.allCases[index].image
   }
 }

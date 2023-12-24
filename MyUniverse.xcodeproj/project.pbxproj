@@ -45,9 +45,14 @@
 		8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */; };
 		8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08942B14DB2500960B86 /* UIViewController+.swift */; };
 		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
+		8D8A6E492B369A2C00E4412C /* NebulaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */; };
+		8D8A6E4E2B369E8300E4412C /* Nebula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E4D2B369E8300E4412C /* Nebula.swift */; };
+		8D8A6E502B3828FA00E4412C /* NebulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */; };
 		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
 		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
+		8DCBB8102B35CFBE00E37861 /* NebulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */; };
+		8DCBB8152B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBB8142B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift */; };
 		8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A5F2B2F2B2B006D6532 /* Planet.swift */; };
 		8DD99A622B2F35C4006D6532 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */; };
 		8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */; };
@@ -119,9 +124,14 @@
 		8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		8D5A08942B14DB2500960B86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D8A6E4D2B369E8300E4412C /* Nebula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nebula.swift; sourceTree = "<group>"; };
+		8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaModel.swift; sourceTree = "<group>"; };
 		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
 		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaVC.swift; sourceTree = "<group>"; };
+		8DCBB8142B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DD99A5F2B2F2B2B006D6532 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DEACCC429C71DA40043DA10 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 		8D12DA932A7F47FF00B2C190 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8DEFA09629BE1899004982CA /* TabBar */,
 				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
 				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
 				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
@@ -244,6 +255,7 @@
 				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
 				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
 				8DD99A5F2B2F2B2B006D6532 /* Planet.swift */,
+				8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +365,25 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		8DCBB80E2B35CFB100E37861 /* Nebula */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A6E4D2B369E8300E4412C /* Nebula.swift */,
+				8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */,
+				8DCBB8112B35D1EA00E37861 /* CollectionViewCell */,
+			);
+			path = Nebula;
+			sourceTree = "<group>";
+		};
+		8DCBB8112B35D1EA00E37861 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DCBB8142B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift */,
+				8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		8DEACCC629C72E740043DA10 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,12 +416,12 @@
 		8DEFA09829BE18B4004982CA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				8D4A322B2B34692000623CF9 /* Asteroid */,
-				8D37D8082B318AC40081807C /* Sun */,
-				8DEFA09629BE1899004982CA /* TabBar */,
 				8D871F0329C3534500FE4528 /* Home */,
 				8D238C862ACAB5A300D3DFDD /* Constellation */,
 				8DF78BFC2B2C14970007DD20 /* Planets */,
+				8D4A322B2B34692000623CF9 /* Asteroid */,
+				8DCBB80E2B35CFB100E37861 /* Nebula */,
+				8D37D8082B318AC40081807C /* Sun */,
 				8D12DAA72A7F88D400B2C190 /* Menu */,
 			);
 			path = Scene;
@@ -590,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */,
+				8DCBB8102B35CFBE00E37861 /* NebulaVC.swift in Sources */,
 				8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */,
 				8D29AB4829B4691B00AD5072 /* MyUniTabBarController.swift in Sources */,
 				8DD99A602B2F2B2B006D6532 /* Planet.swift in Sources */,
@@ -602,6 +634,7 @@
 				8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */,
 				8DEACCC929C72E9D0043DA10 /* SolarSystemCollectionCell.swift in Sources */,
 				8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */,
+				8DCBB8152B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift in Sources */,
 				8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */,
 				8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */,
 				8DEACCC529C71DA40043DA10 /* HomeTableViewHeaderView.swift in Sources */,
@@ -609,6 +642,7 @@
 				8D29AB1829B45F2100AD5072 /* AppDelegate.swift in Sources */,
 				8D12DAA22A7F7EB000B2C190 /* CustomItemView.swift in Sources */,
 				8DEFA09E29BE1A65004982CA /* MyUniNaviVC.swift in Sources */,
+				8D8A6E4E2B369E8300E4412C /* Nebula.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8D4A322E2B34694200623CF9 /* AsteroidVC.swift in Sources */,
 				8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */,
@@ -622,9 +656,11 @@
 				8D12DA9D2A7F7AEE00B2C190 /* MyUniCustomTabBar.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
+				8D8A6E492B369A2C00E4412C /* NebulaCollectionViewCell.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
 				8D37D80A2B318ACC0081807C /* SunVC.swift in Sources */,
 				8D44C0C12B248BB900775B65 /* SeasonConstellation.swift in Sources */,
+				8D8A6E502B3828FA00E4412C /* NebulaModel.swift in Sources */,
 				8D238D612ACC236C00D3DFDD /* BirthConstellation.swift in Sources */,
 				8D29AB1A29B45F2100AD5072 /* SceneDelegate.swift in Sources */,
 				8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */,
