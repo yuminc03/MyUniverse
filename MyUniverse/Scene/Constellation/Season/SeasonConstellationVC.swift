@@ -95,11 +95,6 @@ extension SeasonConstellationVC: UICollectionViewDelegateFlowLayout, UICollectio
     return item
   }
   
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//    let vc = BirthConstellationDetailVC(constellation: viewStore.constellations[indexPath.row])
-//    navi.pushViewController(vc, animated: true)
-  }
-  
   func collectionView(
     _ collectionView: UICollectionView,
     layout collectionViewLayout: UICollectionViewLayout,

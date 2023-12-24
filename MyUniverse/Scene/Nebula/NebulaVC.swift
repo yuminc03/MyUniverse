@@ -8,6 +8,8 @@
 import UIKit
 
 import ComposableArchitecture
+import FlexLayout
+import PinLayout
 
 struct NebulaCore: Reducer {
   struct State: Equatable {
@@ -24,7 +26,6 @@ struct NebulaCore: Reducer {
 }
 
 final class NebulaVC: TCABaseVC<NebulaCore> {
-  
   private let containerView: UIView = {
     let v = UIView()
     v.backgroundColor = .clear
@@ -53,7 +54,17 @@ final class NebulaVC: TCABaseVC<NebulaCore> {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
-    setupConstraints()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    containerView.pin.all()
+    collectionView.pin.all()
+  }
+  
+  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransition(to: size, with: coordinator)
+    collectionView.collectionViewLayout.invalidateLayout()
   }
   
   private func setupUI() {
@@ -64,10 +75,6 @@ final class NebulaVC: TCABaseVC<NebulaCore> {
     collectionView.delegate = self
     collectionView.dataSource = self
   }
-  
-  private func setupConstraints() {
-    
-  }
 }
 
 extension NebulaVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -75,18 +82,26 @@ extension NebulaVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSour
     _ collectionView: UICollectionView,
     numberOfItemsInSection section: Int
   ) -> Int {
-    return 1
+    return NebulaModel.dummy.count + 1
   }
   
   func collectionView(
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
-    return UICollectionViewCell()
-//    let item = collectionView.dequeueItem(type: SeasonConstellationCollectionCell.self, indexPath: indexPath)
-//    item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
-//    item.updateImage(index: indexPath.item)
-//    return item
+    if indexPath.item == 0 {
+      let item = collectionView.dequeueItem(type: NebulaDescriptionCollectionViewCell.self, indexPath: indexPath)
+      item.updateUI(
+        title: "별과 별 사이에 성간 물질이 많이 모여 있어 구름처럼 보이는 것.",
+        description: "성간구름 - 우리 은하계 내나 은하계외 성운에서 볼 수 있는 가스·플라스마·우주진의 모임\n성간 물질 - 은하 내의 항성 사이나 항성 바로 근처에 존재하는 물질이나 에너지"
+      )
+      return item
+    } else {
+      let item = collectionView.dequeueItem(type: NebulaCollectionViewCell.self, indexPath: indexPath)
+      item.updateUI(data: NebulaModel.dummy[indexPath.item - 1])
+      item.updateImage(index: indexPath.item - 1)
+      return item
+    }
   }
   
   func collectionView(
@@ -94,11 +109,22 @@ extension NebulaVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSour
     layout collectionViewLayout: UICollectionViewLayout,
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
-    let item = SeasonConstellationCollectionCell()
-    item.updateUI(data: SeasonConstellation.dummy[indexPath.item])
-    item.updateImage(index: indexPath.item)
-    return item.sizeThatFits(
-      CGSize(width: UIScreen.main.bounds.width - 40, height: .greatestFiniteMagnitude)
-    )
+    if indexPath.item == 0 {
+      let item = NebulaDescriptionCollectionViewCell()
+      item.updateUI(
+        title: "별과 별 사이에 성간 물질이 많이 모여 있어 구름처럼 보이는 것.",
+        description: "성간구름 - 우리 은하계 내나 은하계외 성운에서 볼 수 있는 가스·플라스마·우주진의 모임\n성간 물질 - 은하 내의 항성 사이나 항성 바로 근처에 존재하는 물질이나 에너지"
+      )
+      return item.sizeThatFits(
+        CGSize(width: UIScreen.main.bounds.width - 40, height: .greatestFiniteMagnitude)
+      )
+    } else {
+      let item = collectionView.dequeueItem(type: NebulaCollectionViewCell.self, indexPath: indexPath)
+      item.updateUI(data: NebulaModel.dummy[indexPath.item - 1])
+      item.updateImage(index: indexPath.item - 1)
+      return item.sizeThatFits(
+        CGSize(width: UIScreen.main.bounds.width - 40, height: .greatestFiniteMagnitude)
+      )
+    }
   }
 }
