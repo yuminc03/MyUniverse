@@ -119,7 +119,8 @@ final class HomeVC: TCABaseVC<HomeCore> {
         navi.pushViewController(vc, animated: true)
         
       case 2:
-        break
+        let vc = GalaxyVC()
+        navi.pushViewController(vc, animated: true)
         
       default:
         break
