@@ -50,6 +50,8 @@
 		8D8A6E502B3828FA00E4412C /* NebulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */; };
 		8D8A6E572B397B3900E4412C /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E562B397B3900E4412C /* Galaxy.swift */; };
 		8D8A6E5A2B39A97A00E4412C /* GalaxyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E592B39A97A00E4412C /* GalaxyVC.swift */; };
+		8D8A6E5D2B39AD1200E4412C /* GalaxyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E5C2B39AD1200E4412C /* GalaxyModel.swift */; };
+		8D8A6E602B39ADF500E4412C /* GalaxyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E5F2B39ADF500E4412C /* GalaxyCollectionViewCell.swift */; };
 		8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */; };
 		8DC28BE52AD04A6800854348 /* BirthConstellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC28BE42AD04A6800854348 /* BirthConstellations.swift */; };
 		8DC2CDF62ABC6D58008CB2B6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */; };
@@ -131,6 +133,8 @@
 		8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaModel.swift; sourceTree = "<group>"; };
 		8D8A6E562B397B3900E4412C /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
 		8D8A6E592B39A97A00E4412C /* GalaxyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyVC.swift; sourceTree = "<group>"; };
+		8D8A6E5C2B39AD1200E4412C /* GalaxyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyModel.swift; sourceTree = "<group>"; };
+		8D8A6E5F2B39ADF500E4412C /* GalaxyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DC28BE22AD0489700854348 /* BirthConstellationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationDetailVC.swift; sourceTree = "<group>"; };
 		8DC28BE42AD04A6800854348 /* BirthConstellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellations.swift; sourceTree = "<group>"; };
 		8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
 				8DD99A5F2B2F2B2B006D6532 /* Planet.swift */,
 				8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */,
+				8D8A6E5C2B39AD1200E4412C /* GalaxyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,8 +371,17 @@
 			children = (
 				8D8A6E562B397B3900E4412C /* Galaxy.swift */,
 				8D8A6E592B39A97A00E4412C /* GalaxyVC.swift */,
+				8D8A6E622B39ADFE00E4412C /* CollectionViewCell */,
 			);
 			path = Galaxy;
+			sourceTree = "<group>";
+		};
+		8D8A6E622B39ADFE00E4412C /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A6E5F2B39ADF500E4412C /* GalaxyCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		8DC28BE12AD0488700854348 /* Detail */ = {
@@ -659,6 +673,7 @@
 				8D8A6E4E2B369E8300E4412C /* Nebula.swift in Sources */,
 				8D25A51C2ABEC67900F71B04 /* TCABaseVC.swift in Sources */,
 				8D4A322E2B34694200623CF9 /* AsteroidVC.swift in Sources */,
+				8D8A6E5D2B39AD1200E4412C /* GalaxyModel.swift in Sources */,
 				8DC28BE32AD0489700854348 /* BirthConstellationDetailVC.swift in Sources */,
 				8D12DA9B2A7F75E900B2C190 /* CustomTabBarItem.swift in Sources */,
 				8DF78BFE2B2C14B80007DD20 /* PlanetsVC.swift in Sources */,
@@ -671,6 +686,7 @@
 				8D12DA9D2A7F7AEE00B2C190 /* MyUniCustomTabBar.swift in Sources */,
 				8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */,
 				8DEFA0A029BE1E56004982CA /* HomeVC.swift in Sources */,
+				8D8A6E602B39ADF500E4412C /* GalaxyCollectionViewCell.swift in Sources */,
 				8D8A6E492B369A2C00E4412C /* NebulaCollectionViewCell.swift in Sources */,
 				8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */,
 				8D37D80A2B318ACC0081807C /* SunVC.swift in Sources */,
