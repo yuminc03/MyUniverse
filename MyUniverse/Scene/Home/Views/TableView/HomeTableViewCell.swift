@@ -115,7 +115,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
         type: ConstellationCollectionCell.self,
         indexPath: indexPath
       )
-      item.setUI(titleText: constellation.stars[indexPath.item].name)
+      item.updateUI(star: constellation.stars[indexPath.item])
       return item
       
     case 1:
