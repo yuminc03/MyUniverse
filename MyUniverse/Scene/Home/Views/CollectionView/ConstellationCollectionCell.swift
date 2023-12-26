@@ -11,10 +11,11 @@ import FlexLayout
 import PinLayout
 
 final class ConstellationCollectionCell: UICollectionViewCell {
-  private let roundedRectangleView: UIView = {
-    let v = UIView()
+  private let roundedImageView: UIImageView = {
+    let v = UIImageView()
     v.layer.cornerRadius = 10
-    v.backgroundColor = UIColor(resource: R.color.purple100)
+    v.layer.masksToBounds = true
+    v.contentMode = .scaleAspectFill
     return v
   }()
   
@@ -53,12 +54,13 @@ final class ConstellationCollectionCell: UICollectionViewCell {
   
   private func setupConstraints() {
     contentView.flex.direction(.column).define {
-      $0.addItem(roundedRectangleView).height((UIScreen.main.bounds.width - 40) / 2)
+      $0.addItem(roundedImageView).height((UIScreen.main.bounds.width - 40) / 2)
       $0.addItem(titleLabel).marginTop(10)
     }
   }
   
-  func setUI(titleText: String) {
-    titleLabel.text = titleText
+  func updateUI(star: Universe.Star) {
+    titleLabel.text = star.name
+    roundedImageView.image = UIImage(resource: star.image)
   }
 }
