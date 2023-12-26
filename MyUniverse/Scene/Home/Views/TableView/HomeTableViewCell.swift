@@ -123,7 +123,7 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
         type: SolarSystemCollectionCell.self,
         indexPath: indexPath
       )
-      item.setUI(titleText: solarSystem.stars[indexPath.item].name)
+      item.updateUI(star: solarSystem.stars[indexPath.item])
       return item
       
     case 2:
@@ -131,10 +131,11 @@ extension HomeTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionVie
         type: SolarSystemCollectionCell.self,
         indexPath: indexPath
       )
-      item.setUI(titleText: interstellarMaterial.stars[indexPath.item].name)
+      item.updateUI(star: interstellarMaterial.stars[indexPath.item])
       return item
 
-    default: return UICollectionViewCell()
+    default: 
+      return UICollectionViewCell()
     }
   }
   
