@@ -90,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D100E712C5BD42A0016B0DA /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		8D12DA942A7F481F00B2C190 /* TableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
 		8D12DA952A7F481F00B2C190 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		8D12DA962A7F481F00B2C190 /* CollectionView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		8D12DAA32A7F81FC00B2C190 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8D12DAA52A7F847400B2C190 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		8D2110F62AF64520006F517E /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../../../Desktop/DesignSystem; sourceTree = "<group>"; };
 		8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationCollectionCell.swift; sourceTree = "<group>"; };
 		8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellation.swift; sourceTree = "<group>"; };
 		8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthConstellationCollectionCell.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		8D29AB0B29B45F2100AD5072 = {
 			isa = PBXGroup;
 			children = (
-				8D2110F62AF64520006F517E /* DesignSystem */,
+				8D100E712C5BD42A0016B0DA /* DesignSystem */,
 				8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */,
 				8D29AB1629B45F2100AD5072 /* MyUniverse */,
 				8D29AB2D29B45F2200AD5072 /* MyUniverseTests */,
