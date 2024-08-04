@@ -44,6 +44,7 @@
 		8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08902B14C45E00960B86 /* UIViewPreview.swift */; };
 		8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */; };
 		8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A08942B14DB2500960B86 /* UIViewController+.swift */; };
+		8D6719562C5F729E0093E2D7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6719552C5F729E0093E2D7 /* MenuTableViewCell.swift */; };
 		8D871F0A29C3595F00FE4528 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */; };
 		8D8A6E492B369A2C00E4412C /* NebulaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */; };
 		8D8A6E4E2B369E8300E4412C /* Nebula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A6E4D2B369E8300E4412C /* Nebula.swift */; };
@@ -127,6 +128,7 @@
 		8D5A08902B14C45E00960B86 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		8D5A08942B14DB2500960B86 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		8D6719552C5F729E0093E2D7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		8D871F0929C3595F00FE4528 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D8A6E4D2B369E8300E4412C /* Nebula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nebula.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		8D12DAA72A7F88D400B2C190 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				8D6719542C5F72850093E2D7 /* Component */,
 				8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */,
 			);
 			path = Menu;
@@ -346,6 +349,14 @@
 				8D4A322D2B34694200623CF9 /* AsteroidVC.swift */,
 			);
 			path = Asteroid;
+			sourceTree = "<group>";
+		};
+		8D6719542C5F72850093E2D7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8D6719552C5F729E0093E2D7 /* MenuTableViewCell.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		8D871F0329C3534500FE4528 /* Home */ = {
@@ -657,6 +668,7 @@
 				8D44C0C42B248DBC00775B65 /* SeasonConstellationCollectionCell.swift in Sources */,
 				8D5A08932B14C5CC00960B86 /* UIViewControllerPreview.swift in Sources */,
 				8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */,
+				8D6719562C5F729E0093E2D7 /* MenuTableViewCell.swift in Sources */,
 				8D5A08952B14DB2500960B86 /* UIViewController+.swift in Sources */,
 				8DEFA09C29BE1A39004982CA /* MyUniVC.swift in Sources */,
 				8D5A08912B14C45E00960B86 /* UIViewPreview.swift in Sources */,

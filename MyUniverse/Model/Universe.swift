@@ -1,10 +1,3 @@
-//
-//  Universe.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/09/23.
-//
-
 import Foundation
 
 struct Universe: Equatable {
@@ -15,6 +8,12 @@ struct Universe: Equatable {
     let name: String
     let image: ImageResource
   }
+  
+  static let allData: [Universe] = [
+    constellationDummy,
+    solarSystemDummy, 
+    interstellarMaterialDummy
+  ]
   
   static let constellationDummy: Universe = .init(
     name: "별자리",

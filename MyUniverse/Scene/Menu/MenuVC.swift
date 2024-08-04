@@ -1,52 +1,57 @@
-//
-//  MenuVC.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/08/06.
-//
-
 import UIKit
 
-import FlexLayout
-import PinLayout
+import SnapKit
 
 final class MenuVC: MyUniVC {
-  private let containerView: UIView = {
-    let v = UIView()
+  private let tableView: UITableView = {
+    let v = UITableView(frame: .zero, style: .insetGrouped)
     v.backgroundColor = .clear
-    return v
-  }()
-  
-  private let noticeLabel: UILabel = {
-    let v = UILabel()
-    v.text = "오픈 예정입니다🙂"
-    v.textColor = .white
-    v.font = .systemFont(ofSize: 30, weight: .bold)
-    v.textAlignment = .center
+    v.registerCell(type: MenuTableViewCell.self)
     return v
   }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     setupUI()
     setupConstraints()
   }
   
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    containerView.pin.all(view.pin.safeArea)
-    containerView.flex.layout(mode: .adjustHeight)
-  }
-  
   private func setupUI() {
     setNavigationBarTitle("메뉴")
-    view.addSubview(containerView)
     navi.navigationBar.prefersLargeTitles = true
+    
+    view.addSubview(tableView)
+    
+    tableView.delegate = self
+    tableView.dataSource = self
   }
   
   private func setupConstraints() {
-    containerView.flex.define {
-      $0.addItem(noticeLabel).marginTop(20)
+    tableView.snp.makeConstraints {
+      $0.top.bottom.equalTo(view.safeAreaInsets)
+      $0.leading.trailing.equalToSuperview()
     }
+  }
+}
+
+extension MenuVC: UITableViewDelegate, UITableViewDataSource {
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return Universe.allData.count
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return Universe.allData[section].stars.count
+  }
+  
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return Universe.allData[section].name
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let data = Universe.allData[indexPath.section].stars[indexPath.row]
+    let cell = tableView.dequeueCell(type: MenuTableViewCell.self, indexPath: indexPath)
+    cell.updateUI(text: data.name)
+    return cell
   }
 }
