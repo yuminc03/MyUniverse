@@ -17,6 +17,55 @@ final class MenuVC: MyUniVC {
     setupConstraints()
   }
   
+  private func pushVC(section: Int, row: Int) {
+    switch section {
+    case 0:
+      switch row {
+      case 0:
+        let vc = BirthConstellationVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        let vc = SeasonConstellationVC()
+        navi.pushViewController(vc, animated: true)
+        
+      default: break
+      }
+      
+    case 1:
+      switch row {
+      case 0:
+        let vc = PlanetsVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        let vc = SunVC()
+        navi.pushViewController(vc, animated: true)
+        
+      default: break
+      }
+      
+    case 2:
+      switch row {
+      case 0:
+        let vc = AsteroidVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 1:
+        let vc = NebulaVC()
+        navi.pushViewController(vc, animated: true)
+        
+      case 2:
+        let vc = GalaxyVC()
+        navi.pushViewController(vc, animated: true)
+        
+      default: break
+      }
+      
+    default: break
+    }
+  }
+  
   private func setupUI() {
     setNavigationBarTitle("메뉴")
     navi.navigationBar.prefersLargeTitles = true
@@ -53,5 +102,10 @@ extension MenuVC: UITableViewDelegate, UITableViewDataSource {
     let cell = tableView.dequeueCell(type: MenuTableViewCell.self, indexPath: indexPath)
     cell.updateUI(text: data.name)
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    pushVC(section: indexPath.section, row: indexPath.row)
   }
 }

@@ -33,11 +33,10 @@ final class MenuTableViewCell: UITableViewCell {
   }
   
   private func setupUI() {
-    selectionStyle = .none
     backgroundColor = .white
     addSubview(containerStackView)
     
-    containerStackView.addArrangedSubviews([titleLabel])
+    containerStackView.addArrangedSubview(titleLabel)
   }
   
   private func setupConstraints() {
