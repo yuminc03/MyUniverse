@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05AAC4C32D08013D00CE3A47 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 05AAC4C22D08013D00CE3A47 /* RswiftLibrary */; };
 		8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA942A7F481F00B2C190 /* TableView+.swift */; };
 		8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA952A7F481F00B2C190 /* Array+.swift */; };
 		8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA962A7F481F00B2C190 /* CollectionView+.swift */; };
@@ -17,7 +18,6 @@
 		8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA32A7F81FC00B2C190 /* UIView+.swift */; };
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
-		8D2110F92AF64556006F517E /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8D2110F82AF64556006F517E /* DesignSystem */; };
 		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
 		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
 		8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */; };
@@ -69,8 +69,6 @@
 		8DF78BFE2B2C14B80007DD20 /* PlanetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */; };
 		8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78C002B2C1E800007DD20 /* Planets.swift */; };
 		8DF941122B27336900452292 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF941112B27336900452292 /* Color.xcassets */; };
-		8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941152B2733BB00452292 /* RswiftLibrary */; };
-		8DF941182B2733BB00452292 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941172B2733BB00452292 /* rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D100E712C5BD42A0016B0DA /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		8D12DA942A7F481F00B2C190 /* TableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
 		8D12DA952A7F481F00B2C190 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		8D12DA962A7F481F00B2C190 /* CollectionView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
@@ -162,9 +159,7 @@
 				8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */,
 				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
-				8D2110F92AF64556006F517E /* DesignSystem in Frameworks */,
-				8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */,
-				8DF941182B2733BB00452292 /* rswift in Frameworks */,
+				05AAC4C32D08013D00CE3A47 /* RswiftLibrary in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
 				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
@@ -187,24 +182,187 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D12DA932A7F47FF00B2C190 /* Common */ = {
+		05AAC4CE2D0810B800CE3A47 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
+				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
 				8DEFA09629BE1899004982CA /* TabBar */,
-				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
-				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
-				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		05AAC4CF2D0810BD00CE3A47 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D238C892ACAB61000D3DFDD /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		05AAC4D12D0810CC00CE3A47 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8D12DA932A7F47FF00B2C190 /* Component */,
+				8DF941132B27337A00452292 /* Resource */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		05AAC4D52D0812C500CE3A47 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
+				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
+				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
+				8D5A08942B14DB2500960B86 /* UIViewController+.swift */,
+				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
 				8D5A08902B14C45E00960B86 /* UIViewPreview.swift */,
 				8D5A08922B14C5CC00960B86 /* UIViewControllerPreview.swift */,
 			);
-			path = Common;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		05AAC4DA2D0813E400CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4DC2D08142C00CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8DC28BE42AD04A6800854348 /* BirthConstellations.swift */,
+				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4DD2D08143100CE3A47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05AAC4DE2D08147100CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
+				8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4E02D08148F00CE3A47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05AAC4E12D08149500CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8DD99A5F2B2F2B2B006D6532 /* Planet.swift */,
+				8DF78C002B2C1E800007DD20 /* Planets.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4E32D0814C700CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */,
+				8D8A6E4D2B369E8300E4412C /* Nebula.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4E42D0814EF00CE3A47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A6E562B397B3900E4412C /* Galaxy.swift */,
+				8D8A6E5C2B39AD1200E4412C /* GalaxyModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05AAC4E52D08152100CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A6E592B39A97A00E4412C /* GalaxyVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4E62D08152700CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4E72D08153C00CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8D37D8092B318ACC0081807C /* SunVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4E82D08155400CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4E92D08155E00CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4EA2D08157400CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		05AAC4EC2D08159E00CE3A47 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFA09F29BE1E56004982CA /* HomeVC.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		8D12DA932A7F47FF00B2C190 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFA09D29BE1A65004982CA /* MyUniNaviVC.swift */,
+				8DEFA09B29BE1A39004982CA /* MyUniVC.swift */,
+				8D25A51B2ABEC67900F71B04 /* TCABaseVC.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		8D12DAA72A7F88D400B2C190 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				8D6719542C5F72850093E2D7 /* Component */,
 				8D6719582C5FA1480093E2D7 /* Scene */,
+				8D6719542C5F72850093E2D7 /* View */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -229,11 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				8D12DA952A7F481F00B2C190 /* Array+.swift */,
-				8D12DA962A7F481F00B2C190 /* CollectionView+.swift */,
-				8D12DA942A7F481F00B2C190 /* TableView+.swift */,
-				8D12DAA32A7F81FC00B2C190 /* UIView+.swift */,
-				8D5A08942B14DB2500960B86 /* UIViewController+.swift */,
-				8D12DAA52A7F847400B2C190 /* UIStackView+.swift */,
+				05AAC4D52D0812C500CE3A47 /* UI */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,9 +395,9 @@
 		8D238C8A2ACAB84C00D3DFDD /* Birth */ = {
 			isa = PBXGroup;
 			children = (
-				8DC28BE42AD04A6800854348 /* BirthConstellations.swift */,
-				8D238D672ACC5A6900D3DFDD /* BirthConstellationVC.swift */,
-				8D238D652ACC55AA00D3DFDD /* BirthConstellationCollectionCell.swift */,
+				05AAC4EA2D08157400CE3A47 /* Scene */,
+				05AAC4DD2D08143100CE3A47 /* View */,
+				05AAC4DC2D08142C00CE3A47 /* Entity */,
 				8DC28BE12AD0488700854348 /* Detail */,
 			);
 			path = Birth;
@@ -252,30 +406,16 @@
 		8D238C8B2ACAB85400D3DFDD /* Season */ = {
 			isa = PBXGroup;
 			children = (
-				8D44C0BE2B2483DD00775B65 /* SeasonConstellations.swift */,
-				8D44C0BC2B24822700775B65 /* SeasonConstellationVC.swift */,
-				8D44C0C22B248D8100775B65 /* CollectionView */,
+				05AAC4E92D08155E00CE3A47 /* Scene */,
+				05AAC4DE2D08147100CE3A47 /* Entity */,
+				8D44C0C22B248D8100775B65 /* View */,
 			);
 			path = Season;
-			sourceTree = "<group>";
-		};
-		8D25A5162ABEB38400F71B04 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8D25A5172ABEBB5800F71B04 /* Universe.swift */,
-				8D238D602ACC236C00D3DFDD /* BirthConstellation.swift */,
-				8D44C0C02B248BB900775B65 /* SeasonConstellation.swift */,
-				8DD99A5F2B2F2B2B006D6532 /* Planet.swift */,
-				8D8A6E4F2B3828FA00E4412C /* NebulaModel.swift */,
-				8D8A6E5C2B39AD1200E4412C /* GalaxyModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8D29AB0B29B45F2100AD5072 = {
 			isa = PBXGroup;
 			children = (
-				8D100E712C5BD42A0016B0DA /* DesignSystem */,
 				8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */,
 				8D29AB1629B45F2100AD5072 /* MyUniverse */,
 				8D29AB2D29B45F2200AD5072 /* MyUniverseTests */,
@@ -299,13 +439,10 @@
 			isa = PBXGroup;
 			children = (
 				8D29AB2529B45F2200AD5072 /* Info.plist */,
-				8D29AB1729B45F2100AD5072 /* AppDelegate.swift */,
-				8D29AB1929B45F2100AD5072 /* SceneDelegate.swift */,
-				8D238C892ACAB61000D3DFDD /* Extension */,
-				8D25A5162ABEB38400F71B04 /* Model */,
-				8D12DA932A7F47FF00B2C190 /* Common */,
+				05AAC4CE2D0810B800CE3A47 /* App */,
+				05AAC4CF2D0810BD00CE3A47 /* Core */,
 				8DEFA09829BE18B4004982CA /* Scene */,
-				8DF941132B27337A00452292 /* Resource */,
+				05AAC4D12D0810CC00CE3A47 /* DesignSystem */,
 			);
 			path = MyUniverse;
 			sourceTree = "<group>";
@@ -330,17 +467,17 @@
 		8D37D8082B318AC40081807C /* Sun */ = {
 			isa = PBXGroup;
 			children = (
-				8D37D8092B318ACC0081807C /* SunVC.swift */,
+				05AAC4E72D08153C00CE3A47 /* Scene */,
 			);
 			path = Sun;
 			sourceTree = "<group>";
 		};
-		8D44C0C22B248D8100775B65 /* CollectionView */ = {
+		8D44C0C22B248D8100775B65 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8D44C0C32B248DBC00775B65 /* SeasonConstellationCollectionCell.swift */,
 			);
-			path = CollectionView;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8D4A322B2B34692000623CF9 /* Asteroid */ = {
@@ -351,12 +488,12 @@
 			path = Asteroid;
 			sourceTree = "<group>";
 		};
-		8D6719542C5F72850093E2D7 /* Component */ = {
+		8D6719542C5F72850093E2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8D6719552C5F729E0093E2D7 /* MenuTableViewCell.swift */,
 			);
-			path = Component;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8D6719582C5FA1480093E2D7 /* Scene */ = {
@@ -370,37 +507,38 @@
 		8D871F0329C3534500FE4528 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8DEFA09F29BE1E56004982CA /* HomeVC.swift */,
-				8D871F0829C3594500FE4528 /* Views */,
+				05AAC4EC2D08159E00CE3A47 /* Scene */,
+				8D871F0829C3594500FE4528 /* View */,
+				05AAC4DA2D0813E400CE3A47 /* Entity */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		8D871F0829C3594500FE4528 /* Views */ = {
+		8D871F0829C3594500FE4528 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8DEACCC629C72E740043DA10 /* TableView */,
 				8DEACCC729C72E810043DA10 /* CollectionView */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8D8A6E552B396B6B00E4412C /* Galaxy */ = {
 			isa = PBXGroup;
 			children = (
-				8D8A6E562B397B3900E4412C /* Galaxy.swift */,
-				8D8A6E592B39A97A00E4412C /* GalaxyVC.swift */,
-				8D8A6E622B39ADFE00E4412C /* CollectionViewCell */,
+				05AAC4E52D08152100CE3A47 /* Scene */,
+				05AAC4E42D0814EF00CE3A47 /* Entity */,
+				8D8A6E622B39ADFE00E4412C /* View */,
 			);
 			path = Galaxy;
 			sourceTree = "<group>";
 		};
-		8D8A6E622B39ADFE00E4412C /* CollectionViewCell */ = {
+		8D8A6E622B39ADFE00E4412C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8D8A6E5F2B39ADF500E4412C /* GalaxyCollectionViewCell.swift */,
 			);
-			path = CollectionViewCell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8DC28BE12AD0488700854348 /* Detail */ = {
@@ -414,20 +552,20 @@
 		8DCBB80E2B35CFB100E37861 /* Nebula */ = {
 			isa = PBXGroup;
 			children = (
-				8D8A6E4D2B369E8300E4412C /* Nebula.swift */,
-				8DCBB80F2B35CFBE00E37861 /* NebulaVC.swift */,
-				8DCBB8112B35D1EA00E37861 /* CollectionViewCell */,
+				05AAC4E62D08152700CE3A47 /* Scene */,
+				05AAC4E32D0814C700CE3A47 /* Entity */,
+				8DCBB8112B35D1EA00E37861 /* View */,
 			);
 			path = Nebula;
 			sourceTree = "<group>";
 		};
-		8DCBB8112B35D1EA00E37861 /* CollectionViewCell */ = {
+		8DCBB8112B35D1EA00E37861 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8DCBB8142B35D33C00E37861 /* NebulaDescriptionCollectionViewCell.swift */,
 				8D8A6E482B369A2C00E4412C /* NebulaCollectionViewCell.swift */,
 			);
-			path = CollectionViewCell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8DEACCC629C72E740043DA10 /* TableView */ = {
@@ -477,9 +615,9 @@
 		8DF78BFC2B2C14970007DD20 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				8DF78C002B2C1E800007DD20 /* Planets.swift */,
-				8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */,
-				8DD99A612B2F35C4006D6532 /* PlanetCollectionViewCell.swift */,
+				05AAC4E82D08155400CE3A47 /* Scene */,
+				05AAC4E12D08149500CE3A47 /* Entity */,
+				05AAC4E02D08148F00CE3A47 /* View */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -518,9 +656,7 @@
 				8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */,
 				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
 				8D238C822ACA493800D3DFDD /* PinLayout */,
-				8D2110F82AF64556006F517E /* DesignSystem */,
-				8DF941152B2733BB00452292 /* RswiftLibrary */,
-				8DF941172B2733BB00452292 /* rswift */,
+				05AAC4C22D08013D00CE3A47 /* RswiftLibrary */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -600,7 +736,7 @@
 				8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */,
-				8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */,
+				05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 8D29AB1529B45F2100AD5072 /* Products */;
 			projectDirPath = "";
@@ -905,9 +1041,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lonalia.MyUniverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -935,9 +1075,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lonalia.MyUniverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1059,6 +1203,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
 		8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
@@ -1099,25 +1251,18 @@
 				minimumVersion = 5.6.0;
 			};
 		};
-		8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.4.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		05AAC4C22D08013D00CE3A47 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
 		8D12DA9F2A7F7C5E00B2C190 /* CombineCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
-		};
-		8D2110F82AF64556006F517E /* DesignSystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DesignSystem;
 		};
 		8D238C7F2ACA490A00D3DFDD /* FlexLayout */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1138,16 +1283,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8DEFA09329BE0C60004982CA /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		8DF941152B2733BB00452292 /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
-		8DF941172B2733BB00452292 /* rswift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
-			productName = rswift;
 		};
 		8DF941192B27345700452292 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
