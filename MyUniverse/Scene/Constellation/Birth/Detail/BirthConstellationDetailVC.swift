@@ -1,10 +1,3 @@
-//
-//  BirthConstellationDetailVC.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/10/06.
-//
-
 import UIKit
 
 import ComposableArchitecture

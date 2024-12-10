@@ -1,10 +1,3 @@
-//
-//  Planet.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/12/17.
-//
-
 import Foundation
 
 struct Planet: Equatable, Identifiable {

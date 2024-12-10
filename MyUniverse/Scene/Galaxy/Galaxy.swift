@@ -1,10 +1,3 @@
-//
-//  Galaxy.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/12/25.
-//
-
 import Foundation
 import UIKit
 

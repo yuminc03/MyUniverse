@@ -1,10 +1,3 @@
-//
-//  BirthConstellations.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/10/06.
-//
-
 import Foundation
 import UIKit
 

@@ -1,10 +1,3 @@
-//
-//  HomeViewController.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/03/12.
-//
-
 import UIKit
 import SwiftUI
 
@@ -17,7 +10,6 @@ struct HomeCore: Reducer {
     let constellation = Universe.constellationDummy
     let solarSystem = Universe.solarSystemDummy
     let interstellarMaterial = Universe.interstellarMaterialDummy
-    
   }
   
   enum Action {

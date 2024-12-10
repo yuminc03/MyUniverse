@@ -1,10 +1,3 @@
-//
-//  CustomItemView.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/08/06.
-//
-
 import UIKit
 
 import SnapKit

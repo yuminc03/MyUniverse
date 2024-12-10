@@ -1,10 +1,3 @@
-//
-//  NebulaDescriptionCollectionViewCell.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/12/22.
-//
-
 import UIKit
 
 import FlexLayout

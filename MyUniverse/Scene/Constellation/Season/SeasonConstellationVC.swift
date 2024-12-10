@@ -1,10 +1,3 @@
-//
-//  SeasonConstellationVC.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/12/09.
-//
-
 import UIKit
 
 import ComposableArchitecture

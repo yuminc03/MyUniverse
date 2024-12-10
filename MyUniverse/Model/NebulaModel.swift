@@ -1,10 +1,3 @@
-//
-//  NebulaModel.swift
-//  MyUniverse
-//
-//  Created by Yumin Chu on 2023/12/24.
-//
-
 import Foundation
 
 struct NebulaModel: Equatable, Identifiable {
