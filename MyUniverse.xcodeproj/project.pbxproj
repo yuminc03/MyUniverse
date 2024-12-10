@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05AAC4C32D08013D00CE3A47 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 05AAC4C22D08013D00CE3A47 /* RswiftLibrary */; };
 		8D12DA972A7F481F00B2C190 /* TableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA942A7F481F00B2C190 /* TableView+.swift */; };
 		8D12DA982A7F481F00B2C190 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA952A7F481F00B2C190 /* Array+.swift */; };
 		8D12DA992A7F481F00B2C190 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DA962A7F481F00B2C190 /* CollectionView+.swift */; };
@@ -69,8 +70,6 @@
 		8DF78BFE2B2C14B80007DD20 /* PlanetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78BFD2B2C14B80007DD20 /* PlanetsVC.swift */; };
 		8DF78C012B2C1E800007DD20 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF78C002B2C1E800007DD20 /* Planets.swift */; };
 		8DF941122B27336900452292 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF941112B27336900452292 /* Color.xcassets */; };
-		8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941152B2733BB00452292 /* RswiftLibrary */; };
-		8DF941182B2733BB00452292 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DF941172B2733BB00452292 /* rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,8 +162,7 @@
 				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
 				8D2110F92AF64556006F517E /* DesignSystem in Frameworks */,
-				8DF941162B2733BB00452292 /* RswiftLibrary in Frameworks */,
-				8DF941182B2733BB00452292 /* rswift in Frameworks */,
+				05AAC4C32D08013D00CE3A47 /* RswiftLibrary in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
 				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
 			);
@@ -519,8 +517,7 @@
 				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
 				8D238C822ACA493800D3DFDD /* PinLayout */,
 				8D2110F82AF64556006F517E /* DesignSystem */,
-				8DF941152B2733BB00452292 /* RswiftLibrary */,
-				8DF941172B2733BB00452292 /* rswift */,
+				05AAC4C22D08013D00CE3A47 /* RswiftLibrary */,
 			);
 			productName = MyUniverse;
 			productReference = 8D29AB1429B45F2100AD5072 /* MyUniverse.app */;
@@ -600,7 +597,7 @@
 				8D25A5132ABEB0F500F71B04 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				8D238C7E2ACA490A00D3DFDD /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				8D238C812ACA493800D3DFDD /* XCRemoteSwiftPackageReference "PinLayout" */,
-				8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */,
+				05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 8D29AB1529B45F2100AD5072 /* Products */;
 			projectDirPath = "";
@@ -1067,6 +1064,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
 		8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
@@ -1107,17 +1112,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
-		8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.4.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		05AAC4C22D08013D00CE3A47 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05AAC4C12D08013D00CE3A47 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
 		8D12DA9F2A7F7C5E00B2C190 /* CombineCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
@@ -1146,16 +1148,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8DEFA09329BE0C60004982CA /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		8DF941152B2733BB00452292 /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
-		8DF941172B2733BB00452292 /* rswift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8DF941142B2733BB00452292 /* XCRemoteSwiftPackageReference "R" */;
-			productName = rswift;
 		};
 		8DF941192B27345700452292 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
