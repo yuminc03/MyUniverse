@@ -18,7 +18,6 @@
 		8D12DAA42A7F81FC00B2C190 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA32A7F81FC00B2C190 /* UIView+.swift */; };
 		8D12DAA62A7F847400B2C190 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA52A7F847400B2C190 /* UIStackView+.swift */; };
 		8D12DAA92A7F88EB00B2C190 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D12DAA82A7F88EB00B2C190 /* MenuVC.swift */; };
-		8D2110F92AF64556006F517E /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8D2110F82AF64556006F517E /* DesignSystem */; };
 		8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C7F2ACA490A00D3DFDD /* FlexLayout */; };
 		8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8D238C822ACA493800D3DFDD /* PinLayout */; };
 		8D238C852ACA668800D3DFDD /* ConstellationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D238C842ACA668800D3DFDD /* ConstellationCollectionCell.swift */; };
@@ -90,7 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D100E712C5BD42A0016B0DA /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		8D12DA942A7F481F00B2C190 /* TableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
 		8D12DA952A7F481F00B2C190 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		8D12DA962A7F481F00B2C190 /* CollectionView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				8DEFA09529BE0C60004982CA /* SnapKit in Frameworks */,
 				8D238C832ACA493800D3DFDD /* PinLayout in Frameworks */,
 				8D12DAA02A7F7C5E00B2C190 /* CombineCocoa in Frameworks */,
-				8D2110F92AF64556006F517E /* DesignSystem in Frameworks */,
 				05AAC4C32D08013D00CE3A47 /* RswiftLibrary in Frameworks */,
 				8D25A5152ABEB0F500F71B04 /* ComposableArchitecture in Frameworks */,
 				8D238C802ACA490A00D3DFDD /* FlexLayout in Frameworks */,
@@ -273,7 +270,6 @@
 		8D29AB0B29B45F2100AD5072 = {
 			isa = PBXGroup;
 			children = (
-				8D100E712C5BD42A0016B0DA /* DesignSystem */,
 				8DC2CDF52ABC6D58008CB2B6 /* .swiftlint.yml */,
 				8D29AB1629B45F2100AD5072 /* MyUniverse */,
 				8D29AB2D29B45F2200AD5072 /* MyUniverseTests */,
@@ -516,7 +512,6 @@
 				8D25A5142ABEB0F500F71B04 /* ComposableArchitecture */,
 				8D238C7F2ACA490A00D3DFDD /* FlexLayout */,
 				8D238C822ACA493800D3DFDD /* PinLayout */,
-				8D2110F82AF64556006F517E /* DesignSystem */,
 				05AAC4C22D08013D00CE3A47 /* RswiftLibrary */,
 			);
 			productName = MyUniverse;
@@ -1124,10 +1119,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D12DA9E2A7F7C5E00B2C190 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
-		};
-		8D2110F82AF64556006F517E /* DesignSystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DesignSystem;
 		};
 		8D238C7F2ACA490A00D3DFDD /* FlexLayout */ = {
 			isa = XCSwiftPackageProductDependency;
