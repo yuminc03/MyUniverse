@@ -18,8 +18,8 @@ final class MyUniNaviVC: UINavigationController {
   
   private let navigationBarAppearance: UINavigationBarAppearance = {
     let v = UINavigationBarAppearance()
-    v.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(resource: R.color.purple200)!]
-    v.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(resource: R.color.purple200)!]
+    v.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(resource: .purple200)]
+    v.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(resource: .purple200)]
     return v
   }()
   
